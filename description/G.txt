@@ -1,0 +1,84 @@
+vertex L0_M0.in1
+vertex L0_M6
+vertex I6
+vertex L0_M6.in1
+vertex O3
+vertex L1_M3
+vertex O0
+vertex O4
+vertex O2
+vertex L1_M2.in2
+vertex L1_M2.in1
+vertex L0_M6.in0
+vertex I0
+vertex O7
+vertex L0_M6.out0
+vertex L1_M3.in2
+vertex L0_M2.in2
+vertex L0_M2.in1
+vertex L1_M2.out0
+vertex O6
+vertex I7
+vertex I3
+vertex O5
+vertex L0_M2.in0
+vertex L1_M2.in0
+vertex L0_M0.in0
+vertex L0_M0
+vertex L0_M0.in2
+vertex I5
+vertex L0_M6.in2
+vertex L1_M2
+vertex L1_M3.out0
+vertex L0_M0.out0
+vertex L1_M3.in0
+vertex L0_M2.out0
+vertex L1_M3.in1
+vertex I4
+vertex I2
+vertex L0_M2
+vertex I1
+vertex O1
+edge L0_M0 L0_M0.out0
+edge L0_M0.in0 L0_M0
+edge L0_M0.in1 L0_M0
+edge L0_M0.in2 L0_M0
+edge L0_M2 L0_M2.out0
+edge L0_M2.in0 L0_M2
+edge L0_M2.in1 L0_M2
+edge L0_M2.in2 L0_M2
+edge L0_M6 L0_M6.out0
+edge L0_M6.in0 L0_M6
+edge L0_M6.in1 L0_M6
+edge L0_M6.in2 L0_M6
+edge L1_M2 L1_M2.out0
+edge L1_M2.in0 L1_M2
+edge L1_M2.in1 L1_M2
+edge L1_M2.in2 L1_M2
+edge L1_M3 L1_M3.out0
+edge L1_M3.in0 L1_M3
+edge L1_M3.in1 L1_M3
+edge L1_M3.in2 L1_M3
+edge I0 L0_M0.in0
+edge I1 L0_M0.in1
+edge I1 L0_M2.in2
+edge I2 L0_M2.in0
+edge I3 L0_M6.in0
+edge I4 L0_M6.in2
+edge I5 L0_M6.in1
+edge I6 L0_M2.in1
+edge I7 L0_M0.in2
+edge L0_M0.out0 L1_M2.in2
+edge L0_M0.out0 L1_M3.in0
+edge L0_M2.out0 L1_M2.in0
+edge L0_M2.out0 L1_M3.in2
+edge L0_M6.out0 L1_M2.in1
+edge L0_M6.out0 L1_M3.in1
+edge L1_M2.out0 O0
+edge L1_M2.out0 O2
+edge L1_M2.out0 O5
+edge L1_M2.out0 O6
+edge L1_M3.out0 O1
+edge L1_M3.out0 O3
+edge L1_M3.out0 O4
+edge L1_M3.out0 O7

@@ -1,0 +1,145 @@
+OUTPUT12 OUTPUT12.out0
+OUTPUT12.in0 OUTPUT12
+Core1.Block0A.UNIT_MUL7.in1 Core1.Block0A.UNIT_MUL7
+Core1.Block0A.UNIT_MUL7 Core1.Block0A.UNIT_MUL7.out0
+Core1.Block0A.UNIT_MUL7.out0 Core1.Block0E.UNIT_ADD0.in1 Core1.Block0A.SWIT_OUT_1.in7 Core1.Block0A.SWIT_OUT_1.out0 Core1.Block0A.out1 Core1.SWIT_Block0A_0E_0.in1 Core1.SWIT_Block0A_0E_0.out2 Core1.SWIT_Block0E_IN_2.in0 Core1.SWIT_Block0E_IN_2.out0 Core1.Block0E.in2 Core1.Block0E.SWIT_ADD_INPORT_0.in2 Core1.Block0E.SWIT_ADD_INPORT_0.out1
+Core1.Block0E.UNIT_ADD0.in1 Core1.Block0E.UNIT_ADD0
+Core1.Block0E.UNIT_ADD0.in2 Core1.Block0E.UNIT_ADD0
+Core1.Block0B.UNIT_MUL1.out0 Core1.Block0E.UNIT_ADD0.in2 Core1.Block0B.SWIT_OUT_0.in1 Core1.Block0B.SWIT_OUT_0.out0 Core1.Block0B.out0 Core1.SWIT_Block0B_0E_0.in0 Core1.SWIT_Block0B_0E_0.out0 Core1.SWIT_Block0E_IN_0.in1 Core1.SWIT_Block0E_IN_0.out0 Core1.Block0E.in0 Core1.Block0E.SWIT_ADD_INPORT_0.in0 Core1.Block0E.SWIT_ADD_INPORT_0.out2
+OUTPUT2 OUTPUT2.out0
+OUTPUT2.in0 OUTPUT2
+OUTPUT17 OUTPUT17.out0
+Core0.Block0B.UNIT_ADD3.out0 OUTPUT17.in0 Core0.Block0B.SWIT_OUT_1.in11 Core0.Block0B.SWIT_OUT_1.out0 Core0.Block0B.out1 Core0.SWIT_OUT_17.in1 Core0.SWIT_OUT_17.out0 Core0.out17 SWIT_OUTPUT17.in0 SWIT_OUTPUT17.out0
+INPUT0 INPUT0.out0
+INPUT0.out0 Core0.Block0B.UNIT_MUL7.in1 Core0.in0 Core0.SWIT_IN_Block0B_0.in0 Core0.SWIT_IN_Block0B_0.out6 Core0.Block0B.in6 Core0.Block0B.SWIT_IN_MUL_1.in6 Core0.Block0B.SWIT_IN_MUL_1.out7
+INPUT0.in0 INPUT0
+Core0.Block0B.UNIT_MUL7.in1 Core0.Block0B.UNIT_MUL7
+Core0.Block0B.UNIT_MUL7.in0 Core0.Block0B.UNIT_MUL7
+Core0.Block0B.UNIT_MUL7 Core0.Block0B.UNIT_MUL7.out0
+Core0.Block0B.UNIT_MUL2.in0 Core0.Block0B.UNIT_MUL2
+Core0.Block0B.UNIT_MUL2 Core0.Block0B.UNIT_MUL2.out0
+Core0.Block0B.UNIT_MUL2.out0 Core0.Block0B.UNIT_ADD3.in2 Core0.Block0B.SWIT_ADD_INPORT_1.in2 Core0.Block0B.SWIT_ADD_INPORT_1.out6
+Core0.Block0B.UNIT_ADD3 Core0.Block0B.UNIT_ADD3.out0
+Core0.Block0B.UNIT_ADD3.in2 Core0.Block0B.UNIT_ADD3
+Core0.Block0B.UNIT_ADD3.in1 Core0.Block0B.UNIT_ADD3
+Core0.Block0B.UNIT_MUL4 Core0.Block0B.UNIT_MUL4.out0
+Core0.Block0B.UNIT_MUL4.in1 Core0.Block0B.UNIT_MUL4
+INPUT6 INPUT6.out0
+INPUT6.out0 Core0.Block0B.UNIT_MUL4.in1 Core0.in6 Core0.SWIT_IN_Block0B_0.in6 Core0.SWIT_IN_Block0B_0.out5 Core0.Block0B.in5 Core0.Block0B.SWIT_IN_MUL_1.in5 Core0.Block0B.SWIT_IN_MUL_1.out4
+INPUT6.out0 Core0.Block0B.UNIT_MUL1.in1 Core0.in6 Core0.SWIT_IN_Block0B_0.in6 Core0.SWIT_IN_Block0B_0.out5 Core0.Block0B.in5 Core0.Block0B.SWIT_IN_MUL_1.in5 Core0.Block0B.SWIT_IN_MUL_1.out1
+Core0.Block0B.UNIT_MUL1.in1 Core0.Block0B.UNIT_MUL1
+Core0.Block0B.UNIT_MUL1.in0 Core0.Block0B.UNIT_MUL1
+Core1.Block0E.UNIT_ADD0 Core1.Block0E.UNIT_ADD0.out0
+Core1.Block0A.UNIT_ADD0.out0 OUTPUT2.in0 Core1.Block0A.SWIT_OUT_2.in8 Core1.Block0A.SWIT_OUT_2.out0 Core1.Block0A.out2 Core1.SWIT_OUT_2.in0 Core1.SWIT_OUT_2.out0 Core1.out2 SWIT_OUTPUT2.in1 SWIT_OUTPUT2.out0
+Core0.Block0B.UNIT_MUL1 Core0.Block0B.UNIT_MUL1.out0
+Core0.Block0B.UNIT_MUL6 Core0.Block0B.UNIT_MUL6.out0
+Core1.Block0A.UNIT_MUL7.in0 Core1.Block0A.UNIT_MUL7
+Core0.Block0B.UNIT_MUL7.out0 Core0.Block0B.UNIT_ADD3.in0 Core0.Block0B.SWIT_ADD_INPORT_1.in7 Core0.Block0B.SWIT_ADD_INPORT_1.out4
+Core0.Block0B.UNIT_MUL6.in1 Core0.Block0B.UNIT_MUL6
+INPUT11.out0 Core1.Block0A.UNIT_MUL2.in0 SWIT_Core1_INPUT11.in1 SWIT_Core1_INPUT11.out0 Core1.in11 Core1.SWIT_IN_Block0A_1.in3 Core1.SWIT_IN_Block0A_1.out2 Core1.Block0A.in10 Core1.Block0A.SWIT_IN_MUL_0.in2 Core1.Block0A.SWIT_IN_MUL_0.out2
+INPUT11.out0 Core0.Block0B.UNIT_MUL2.in0 Core0.in11 Core0.SWIT_IN_Block0B_1.in3 Core0.SWIT_IN_Block0B_1.out0 Core0.Block0B.in8 Core0.Block0B.SWIT_IN_MUL_0.in0 Core0.Block0B.SWIT_IN_MUL_0.out2
+INPUT11.out0 Core1.Block0B.UNIT_MUL1.in0 SWIT_Core1_INPUT11.in1 SWIT_Core1_INPUT11.out0 Core1.in11 Core1.SWIT_IN_Block0B_1.in3 Core1.SWIT_IN_Block0B_1.out0 Core1.Block0B.in8 Core1.Block0B.SWIT_IN_MUL_0.in0 Core1.Block0B.SWIT_IN_MUL_0.out1
+INPUT11.out0 Core0.Block0B.UNIT_MUL5.in0 Core0.in11 Core0.SWIT_IN_Block0B_1.in3 Core0.SWIT_IN_Block0B_1.out0 Core0.Block0B.in8 Core0.Block0B.SWIT_IN_MUL_0.in0 Core0.Block0B.SWIT_IN_MUL_0.out5
+INPUT11.out0 Core0.Block0B.UNIT_MUL6.in0 Core0.in11 Core0.SWIT_IN_Block0B_1.in3 Core0.SWIT_IN_Block0B_1.out0 Core0.Block0B.in8 Core0.Block0B.SWIT_IN_MUL_0.in0 Core0.Block0B.SWIT_IN_MUL_0.out6
+INPUT1 INPUT1.out0
+INPUT1.out0 Core0.Block0B.UNIT_MUL5.in1 Core0.in1 Core0.SWIT_IN_Block0B_0.in1 Core0.SWIT_IN_Block0B_0.out4 Core0.Block0B.in4 Core0.Block0B.SWIT_IN_MUL_1.in4 Core0.Block0B.SWIT_IN_MUL_1.out5
+INPUT1.out0 Core1.Block0A.UNIT_MUL1.in1 SWIT_Core1_INPUT1.in1 SWIT_Core1_INPUT1.out0 Core1.in1 Core1.SWIT_IN_Block0A_0.in1 Core1.SWIT_IN_Block0A_0.out1 Core1.Block0A.in1 Core1.Block0A.SWIT_IN_MUL_1.in1 Core1.Block0A.SWIT_IN_MUL_1.out1
+INPUT1.out0 Core1.Block0A.UNIT_MUL6.in1 SWIT_Core1_INPUT1.in1 SWIT_Core1_INPUT1.out0 Core1.in1 Core1.SWIT_IN_Block0A_0.in1 Core1.SWIT_IN_Block0A_0.out1 Core1.Block0A.in1 Core1.Block0A.SWIT_IN_MUL_1.in1 Core1.Block0A.SWIT_IN_MUL_1.out6
+Core1.Block0A.UNIT_MUL1.out0 Core1.Block0E.UNIT_ADD0.in0 Core1.Block0A.SWIT_OUT_0.in1 Core1.Block0A.SWIT_OUT_0.out0 Core1.Block0A.out0 Core1.SWIT_Block0A_0E_0.in0 Core1.SWIT_Block0A_0E_0.out1 Core1.SWIT_Block0E_IN_1.in0 Core1.SWIT_Block0E_IN_1.out0 Core1.Block0E.in1 Core1.Block0E.SWIT_ADD_INPORT_0.in1 Core1.Block0E.SWIT_ADD_INPORT_0.out0
+Core1.Block0B.UNIT_MUL1.in0 Core1.Block0B.UNIT_MUL1
+INPUT11.in0 INPUT11
+INPUT12.out0 Core1.Block0A.UNIT_MUL7.in0 SWIT_Core1_INPUT12.in1 SWIT_Core1_INPUT12.out0 Core1.in12 Core1.SWIT_IN_Block0A_1.in4 Core1.SWIT_IN_Block0A_1.out1 Core1.Block0A.in9 Core1.Block0A.SWIT_IN_MUL_0.in1 Core1.Block0A.SWIT_IN_MUL_0.out7
+INPUT12.out0 Core0.Block0B.UNIT_MUL4.in0 Core0.in12 Core0.SWIT_IN_Block0B_1.in4 Core0.SWIT_IN_Block0B_1.out2 Core0.Block0B.in10 Core0.Block0B.SWIT_IN_MUL_0.in2 Core0.Block0B.SWIT_IN_MUL_0.out4
+INPUT12.out0 Core0.Block0B.UNIT_MUL0.in0 Core0.in12 Core0.SWIT_IN_Block0B_1.in4 Core0.SWIT_IN_Block0B_1.out2 Core0.Block0B.in10 Core0.Block0B.SWIT_IN_MUL_0.in2 Core0.Block0B.SWIT_IN_MUL_0.out0
+INPUT12.out0 Core1.Block0A.UNIT_MUL6.in0 SWIT_Core1_INPUT12.in1 SWIT_Core1_INPUT12.out0 Core1.in12 Core1.SWIT_IN_Block0A_1.in4 Core1.SWIT_IN_Block0A_1.out1 Core1.Block0A.in9 Core1.Block0A.SWIT_IN_MUL_0.in1 Core1.Block0A.SWIT_IN_MUL_0.out6
+INPUT12.out0 Core0.Block0A.UNIT_MUL5.in0 Core0.in12 Core0.SWIT_IN_Block0A_1.in4 Core0.SWIT_IN_Block0A_1.out0 Core0.Block0A.in8 Core0.Block0A.SWIT_IN_MUL_0.in0 Core0.Block0A.SWIT_IN_MUL_0.out5
+Core1.Block0A.UNIT_ADD0.in1 Core1.Block0A.UNIT_ADD0
+INPUT5.in0 INPUT5
+OUTPUT21 OUTPUT21.out0
+Core0.Block0A.UNIT_MUL5.in1 Core0.Block0A.UNIT_MUL5
+Core0.Block0B.UNIT_MUL4.in0 Core0.Block0B.UNIT_MUL4
+Core1.Block0A.UNIT_ADD0 Core1.Block0A.UNIT_ADD0.out0
+INPUT5.out0 Core1.Block0B.UNIT_MUL1.in1 SWIT_Core1_INPUT5.in1 SWIT_Core1_INPUT5.out0 Core1.in5 Core1.SWIT_IN_Block0B_0.in5 Core1.SWIT_IN_Block0B_0.out0 Core1.Block0B.in0 Core1.Block0B.SWIT_IN_MUL_1.in0 Core1.Block0B.SWIT_IN_MUL_1.out1
+INPUT5.out0 Core0.Block0A.UNIT_MUL5.in1 Core0.in5 Core0.SWIT_IN_Block0A_0.in5 Core0.SWIT_IN_Block0A_0.out0 Core0.Block0A.in0 Core0.Block0A.SWIT_IN_MUL_1.in0 Core0.Block0A.SWIT_IN_MUL_1.out5
+INPUT7 INPUT7.out0
+Core0.Block0A.UNIT_MUL5.in0 Core0.Block0A.UNIT_MUL5
+Core1.Block0B.UNIT_MUL1 Core1.Block0B.UNIT_MUL1.out0
+INPUT3 INPUT3.out0
+INPUT12 INPUT12.out0
+Core1.Block0A.UNIT_MUL1.in1 Core1.Block0A.UNIT_MUL1
+Core1.Block0A.UNIT_MUL6 Core1.Block0A.UNIT_MUL6.out0
+Core0.Block0B.UNIT_MUL6.in0 Core0.Block0B.UNIT_MUL6
+Core0.Block0B.UNIT_MUL3 Core0.Block0B.UNIT_MUL3.out0
+INPUT6.in0 INPUT6
+INPUT2.in0 INPUT2
+OUTPUT17.in0 OUTPUT17
+INPUT1.in0 INPUT1
+Core1.Block0A.UNIT_MUL6.in1 Core1.Block0A.UNIT_MUL6
+Core1.Block0A.UNIT_MUL6.in0 Core1.Block0A.UNIT_MUL6
+Core1.Block0E.UNIT_ADD0.in0 Core1.Block0E.UNIT_ADD0
+Core1.Block0A.UNIT_MUL0.in0 Core1.Block0A.UNIT_MUL0
+Core0.Block0B.UNIT_MUL3.in1 Core0.Block0B.UNIT_MUL3
+OUTPUT7 OUTPUT7.out0
+INPUT11 INPUT11.out0
+Core0.Block0B.UNIT_MUL3.in0 Core0.Block0B.UNIT_MUL3
+INPUT2 INPUT2.out0
+Core1.Block0A.UNIT_ADD1 Core1.Block0A.UNIT_ADD1.out0
+Core1.Block0A.UNIT_MUL1.in0 Core1.Block0A.UNIT_MUL1
+Core0.Block0B.UNIT_MUL6.out0 Core1.Block0A.UNIT_ADD1.in2 Core0.Block0B.SWIT_OUT_0.in6 Core0.Block0B.SWIT_OUT_0.out0 Core0.Block0B.out0 Core0.SWIT_OUT_0.in1 Core0.SWIT_OUT_0.out0 Core0.out0 SWIT_Core1_INPUT0.in0 SWIT_Core1_INPUT0.out0 Core1.in0 Core1.SWIT_IN_Block0A_0.in0 Core1.SWIT_IN_Block0A_0.out7 Core1.Block0A.in7 Core1.Block0A.SWIT_ADD_INPORT_0.in7 Core1.Block0A.SWIT_ADD_INPORT_0.out6
+INPUT5 INPUT5.out0
+Core0.Block0A.UNIT_MUL5 Core0.Block0A.UNIT_MUL5.out0
+Core0.Block0B.UNIT_MUL5.in0 Core0.Block0B.UNIT_MUL5
+Core0.Block0B.UNIT_ADD1.out0 OUTPUT21.in0 Core0.Block0B.SWIT_OUT_5.in9 Core0.Block0B.SWIT_OUT_5.out0 Core0.Block0B.out5 Core0.SWIT_OUT_21.in1 Core0.SWIT_OUT_21.out0 Core0.out21 SWIT_OUTPUT21.in0 SWIT_OUTPUT21.out0
+INPUT12.in0 INPUT12
+Core1.Block0E.UNIT_ADD0.out0 OUTPUT12.in0 Core1.Block0E.SWIT_OUT_4.in8 Core1.Block0E.SWIT_OUT_4.out0 Core1.Block0E.out4 Core1.SWIT_OUT_12.in0 Core1.SWIT_OUT_12.out0 Core1.out12 SWIT_OUTPUT12.in1 SWIT_OUTPUT12.out0
+INPUT3.in0 INPUT3
+INPUT4.in0 INPUT4
+Core0.Block0B.UNIT_MUL1.out0 Core0.Block0B.UNIT_ADD1.in0 Core0.Block0B.SWIT_ADD_INPORT_0.in1 Core0.Block0B.SWIT_ADD_INPORT_0.out4
+INPUT4.out0 Core0.Block0B.UNIT_MUL6.in1 Core0.in4 Core0.SWIT_IN_Block0B_0.in4 Core0.SWIT_IN_Block0B_0.out2 Core0.Block0B.in2 Core0.Block0B.SWIT_IN_MUL_1.in2 Core0.Block0B.SWIT_IN_MUL_1.out6
+Core1.Block0A.UNIT_ADD0.in2 Core1.Block0A.UNIT_ADD0
+Core1.Block0A.UNIT_ADD1.in1 Core1.Block0A.UNIT_ADD1
+Core0.Block0B.UNIT_MUL2.in1 Core0.Block0B.UNIT_MUL2
+Core1.Block0A.UNIT_MUL2.out0 Core1.Block0A.UNIT_ADD0.in2 Core1.Block0A.SWIT_ADD_INPORT_0.in2 Core1.Block0A.SWIT_ADD_INPORT_0.out2
+INPUT7.out0 Core0.Block0B.UNIT_MUL2.in1 Core0.in7 Core0.SWIT_IN_Block0B_0.in7 Core0.SWIT_IN_Block0B_0.out3 Core0.Block0B.in3 Core0.Block0B.SWIT_IN_MUL_1.in3 Core0.Block0B.SWIT_IN_MUL_1.out2
+INPUT7.out0 Core1.Block0A.UNIT_MUL0.in1 SWIT_Core1_INPUT7.in1 SWIT_Core1_INPUT7.out0 Core1.in7 Core1.SWIT_IN_Block0A_0.in7 Core1.SWIT_IN_Block0A_0.out2 Core1.Block0A.in2 Core1.Block0A.SWIT_IN_MUL_1.in2 Core1.Block0A.SWIT_IN_MUL_1.out0
+INPUT7.out0 Core0.Block0B.UNIT_MUL0.in1 Core0.in7 Core0.SWIT_IN_Block0B_0.in7 Core0.SWIT_IN_Block0B_0.out3 Core0.Block0B.in3 Core0.Block0B.SWIT_IN_MUL_1.in3 Core0.Block0B.SWIT_IN_MUL_1.out0
+INPUT4 INPUT4.out0
+Core0.Block0B.UNIT_MUL5 Core0.Block0B.UNIT_MUL5.out0
+Core1.Block0A.UNIT_ADD1.in0 Core1.Block0A.UNIT_ADD1
+INPUT3.out0 Core1.Block0A.UNIT_MUL7.in1 SWIT_Core1_INPUT3.in1 SWIT_Core1_INPUT3.out0 Core1.in3 Core1.SWIT_IN_Block0A_0.in3 Core1.SWIT_IN_Block0A_0.out5 Core1.Block0A.in5 Core1.Block0A.SWIT_IN_MUL_1.in5 Core1.Block0A.SWIT_IN_MUL_1.out7
+INPUT3.out0 Core0.Block0B.UNIT_MUL3.in1 Core0.in3 Core0.SWIT_IN_Block0B_0.in3 Core0.SWIT_IN_Block0B_0.out0 Core0.Block0B.in0 Core0.Block0B.SWIT_IN_MUL_1.in0 Core0.Block0B.SWIT_IN_MUL_1.out3
+INPUT3.out0 Core1.Block0A.UNIT_MUL2.in1 SWIT_Core1_INPUT3.in1 SWIT_Core1_INPUT3.out0 Core1.in3 Core1.SWIT_IN_Block0A_0.in3 Core1.SWIT_IN_Block0A_0.out5 Core1.Block0A.in5 Core1.Block0A.SWIT_IN_MUL_1.in5 Core1.Block0A.SWIT_IN_MUL_1.out2
+OUTPUT7.in0 OUTPUT7
+Core1.Block0A.UNIT_MUL2.in0 Core1.Block0A.UNIT_MUL2
+Core0.Block0B.UNIT_ADD3.in0 Core0.Block0B.UNIT_ADD3
+Core1.Block0A.UNIT_MUL2.in1 Core1.Block0A.UNIT_MUL2
+Core0.Block0B.UNIT_MUL0.out0 Core0.Block0B.UNIT_ADD1.in1 Core0.Block0B.SWIT_ADD_INPORT_0.in0 Core0.Block0B.SWIT_ADD_INPORT_0.out5
+Core0.Block0A.UNIT_MUL5.out0 Core1.Block0A.UNIT_ADD1.in1 Core0.Block0A.SWIT_OUT_6.in5 Core0.Block0A.SWIT_OUT_6.out0 Core0.Block0A.out6 Core0.SWIT_OUT_6.in0 Core0.SWIT_OUT_6.out0 Core0.out6 SWIT_Core1_INPUT6.in0 SWIT_Core1_INPUT6.out0 Core1.in6 Core1.SWIT_IN_Block0A_0.in6 Core1.SWIT_IN_Block0A_0.out3 Core1.Block0A.in3 Core1.Block0A.SWIT_ADD_INPORT_0.in3 Core1.Block0A.SWIT_ADD_INPORT_0.out5
+INPUT2.out0 Core0.Block0B.UNIT_MUL7.in0 Core0.in2 Core0.SWIT_IN_Block0B_0.in2 Core0.SWIT_IN_Block0B_0.out1 Core0.Block0B.in1 Core0.Block0B.SWIT_IN_MUL_0.in1 Core0.Block0B.SWIT_IN_MUL_0.out7
+INPUT2.out0 Core0.Block0B.UNIT_MUL1.in0 Core0.in2 Core0.SWIT_IN_Block0B_0.in2 Core0.SWIT_IN_Block0B_0.out1 Core0.Block0B.in1 Core0.Block0B.SWIT_IN_MUL_0.in1 Core0.Block0B.SWIT_IN_MUL_0.out1
+INPUT2.out0 Core1.Block0A.UNIT_MUL0.in0 SWIT_Core1_INPUT2.in1 SWIT_Core1_INPUT2.out0 Core1.in2 Core1.SWIT_IN_Block0A_0.in2 Core1.SWIT_IN_Block0A_0.out0 Core1.Block0A.in0 Core1.Block0A.SWIT_IN_MUL_0.in0 Core1.Block0A.SWIT_IN_MUL_0.out0
+INPUT2.out0 Core0.Block0B.UNIT_MUL3.in0 Core0.in2 Core0.SWIT_IN_Block0B_0.in2 Core0.SWIT_IN_Block0B_0.out1 Core0.Block0B.in1 Core0.Block0B.SWIT_IN_MUL_0.in1 Core0.Block0B.SWIT_IN_MUL_0.out3
+INPUT2.out0 Core1.Block0A.UNIT_MUL1.in0 SWIT_Core1_INPUT2.in1 SWIT_Core1_INPUT2.out0 Core1.in2 Core1.SWIT_IN_Block0A_0.in2 Core1.SWIT_IN_Block0A_0.out0 Core1.Block0A.in0 Core1.Block0A.SWIT_IN_MUL_0.in0 Core1.Block0A.SWIT_IN_MUL_0.out1
+Core0.Block0B.UNIT_ADD1.in0 Core0.Block0B.UNIT_ADD1
+Core1.Block0A.UNIT_MUL2 Core1.Block0A.UNIT_MUL2.out0
+Core1.Block0A.UNIT_MUL6.out0 Core1.Block0A.UNIT_ADD0.in1 Core1.Block0A.SWIT_ADD_INPORT_0.in6 Core1.Block0A.SWIT_ADD_INPORT_0.out1
+OUTPUT21.in0 OUTPUT21
+Core1.Block0A.UNIT_ADD0.in0 Core1.Block0A.UNIT_ADD0
+Core1.Block0A.UNIT_MUL0.out0 Core1.Block0A.UNIT_ADD0.in0 Core1.Block0A.SWIT_ADD_INPORT_0.in0 Core1.Block0A.SWIT_ADD_INPORT_0.out0
+Core1.Block0A.UNIT_MUL0 Core1.Block0A.UNIT_MUL0.out0
+Core1.Block0A.UNIT_MUL0.in1 Core1.Block0A.UNIT_MUL0
+INPUT7.in0 INPUT7
+Core0.Block0B.UNIT_MUL4.out0 Core0.Block0B.UNIT_ADD3.in1 Core0.Block0B.SWIT_ADD_INPORT_1.in4 Core0.Block0B.SWIT_ADD_INPORT_1.out5
+Core0.Block0B.UNIT_MUL3.out0 Core1.Block0A.UNIT_ADD1.in0 Core0.Block0B.SWIT_OUT_4.in3 Core0.Block0B.SWIT_OUT_4.out0 Core0.Block0B.out4 Core0.SWIT_OUT_4.in1 Core0.SWIT_OUT_4.out0 Core0.out4 SWIT_Core1_INPUT4.in0 SWIT_Core1_INPUT4.out0 Core1.in4 Core1.SWIT_IN_Block0A_0.in4 Core1.SWIT_IN_Block0A_0.out4 Core1.Block0A.in4 Core1.Block0A.SWIT_ADD_INPORT_0.in4 Core1.Block0A.SWIT_ADD_INPORT_0.out4
+Core0.Block0B.UNIT_MUL0.in1 Core0.Block0B.UNIT_MUL0
+Core1.Block0B.UNIT_MUL1.in1 Core1.Block0B.UNIT_MUL1
+Core0.Block0B.UNIT_MUL0 Core0.Block0B.UNIT_MUL0.out0
+Core1.Block0A.UNIT_ADD1.in2 Core1.Block0A.UNIT_ADD1
+Core0.Block0B.UNIT_ADD1.in1 Core0.Block0B.UNIT_ADD1
+Core1.Block0A.UNIT_MUL1 Core1.Block0A.UNIT_MUL1.out0
+Core0.Block0B.UNIT_ADD1.in2 Core0.Block0B.UNIT_ADD1
+Core0.Block0B.UNIT_ADD1 Core0.Block0B.UNIT_ADD1.out0
+Core1.Block0A.UNIT_ADD1.out0 OUTPUT7.in0 Core1.Block0A.SWIT_OUT_7.in9 Core1.Block0A.SWIT_OUT_7.out0 Core1.Block0A.out7 Core1.SWIT_OUT_7.in0 Core1.SWIT_OUT_7.out0 Core1.out7 SWIT_OUTPUT7.in1 SWIT_OUTPUT7.out0
+Core0.Block0B.UNIT_MUL5.out0 Core0.Block0B.UNIT_ADD1.in2 Core0.Block0B.SWIT_ADD_INPORT_0.in5 Core0.Block0B.SWIT_ADD_INPORT_0.out6
+Core0.Block0B.UNIT_MUL0.in0 Core0.Block0B.UNIT_MUL0
+Core0.Block0B.UNIT_MUL5.in1 Core0.Block0B.UNIT_MUL5

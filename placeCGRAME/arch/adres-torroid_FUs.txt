@@ -1,0 +1,53 @@
+CGRA.block_3_0.func func func inputs in1 in0 outputs out0 
+CGRA.block_10_2.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_0_0.rf rf rf inputs in3 in2 in1 in0 outputs out3 out5 out0 out7 out6 out4 out1 out2 
+CGRA.block_4_0.rf rf rf inputs in0 outputs out1 out0 
+CGRA.block_12_3.const const const inputs outputs out0 
+CGRA.block_12_0.func func func inputs in1 in0 outputs out0 
+CGRA.block_9_1.func func func inputs in0 in1 outputs out0 
+CGRA.block_6_2.const const const inputs outputs out0 
+CGRA.block_10_3.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_4_3.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_3_1.func func func inputs in0 in1 outputs out0 
+CGRA.block_4_2.rf rf rf inputs in0 outputs out1 out0 
+CGRA.block_3_1.const const const inputs outputs out0 
+CGRA.block_9_2.func func func inputs in0 in1 outputs out0 
+CGRA.block_12_1.func func func inputs in0 in1 outputs out0 
+CGRA.block_3_2.func func func inputs in0 in1 outputs out0 
+CGRA.block_6_0.func func func inputs in1 in0 outputs out0 
+CGRA.block_2_0.mem_port.mem_unit mem_unit mem_unit inputs in1 in0 outputs out0 
+CGRA.block_8_0.mem_port.mem_unit mem_unit mem_unit inputs in1 in0 outputs out0 
+CGRA.block_9_2.const const const inputs outputs out0 
+CGRA.block_6_0.const const const inputs outputs out0 
+CGRA.block_12_3.func func func inputs in0 in1 outputs out0 
+CGRA.block_10_1.rf rf rf inputs in0 outputs out1 out0 
+CGRA.block_3_2.const const const inputs outputs out0 
+CGRA.block_9_0.func func func inputs in1 in0 outputs out0 
+CGRA.block_12_2.func func func inputs in0 in1 outputs out0 
+CGRA.block_10_0.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_3_3.func func func inputs in0 in1 outputs out0 
+CGRA.block_11_0.mem_port.mem_unit mem_unit mem_unit inputs in0 in1 outputs out0 
+CGRA.block_6_1.const const const inputs outputs out0 
+CGRA.block_7_3.rf rf rf inputs in0 outputs out1 out0 
+CGRA.block_6_3.const const const inputs outputs out0 
+CGRA.block_6_3.func func func inputs in1 in0 outputs out0 
+CGRA.block_1_3.io.OE OE OE inputs in0 outputs out0 
+CGRA.block_6_1.func func func inputs in0 in1 outputs out0 
+CGRA.block_12_2.const const const inputs outputs out0 
+CGRA.block_1_0.io.OE OE OE inputs in0 outputs out0 
+CGRA.block_12_0.const const const inputs outputs out0 
+CGRA.block_6_2.func func func inputs in0 in1 outputs out0 
+CGRA.block_12_1.const const const inputs outputs out0 
+CGRA.block_4_1.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_5_0.mem_port.mem_unit mem_unit mem_unit inputs in1 in0 outputs out0 
+CGRA.block_9_0.const const const inputs outputs out0 
+CGRA.block_9_3.func func func inputs in1 in0 outputs out0 
+CGRA.block_7_2.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_7_1.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_3_0.const const const inputs outputs out0 
+CGRA.block_7_0.rf rf rf inputs in0 outputs out0 out1 
+CGRA.block_3_3.const const const inputs outputs out0 
+CGRA.block_9_3.const const const inputs outputs out0 
+CGRA.block_9_1.const const const inputs outputs out0 
+CGRA.block_1_2.io.OE OE OE inputs in0 outputs out0 
+CGRA.block_1_1.io.OE OE OE inputs in0 outputs out0 

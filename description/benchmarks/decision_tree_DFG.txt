@@ -1,0 +1,238 @@
+vertex CONST2_CONST3
+attr unit str ADDTREE4
+attr pattern str PATN_CONST1
+vertex CONST2_CONST3.out1
+attr unit str ADDTREE4.out1
+vertex CONST1_CONST0
+attr unit str ADDTREE4
+attr pattern str PATN_CONST1
+vertex CONST1_CONST0.out1
+attr unit str ADDTREE4.out1
+vertex LOGICAND40
+attr unit str IFELSE
+attr pattern str PATN_LOGICAND2
+vertex LOGICAND40.out0
+attr unit str IFELSE.out0
+vertex LOGICAND40.in0
+attr unit str IFELSE.in0
+vertex LOGICAND40.in1
+attr unit str IFELSE.in1
+vertex LOGICAND40.in2
+attr unit str IFELSE.in2
+vertex LOGICAND40.in3
+attr unit str IFELSE.in3
+vertex LOGICAND30
+attr unit str IFELSE
+attr pattern str PATN_LOGICAND1
+vertex LOGICAND30.out0
+attr unit str IFELSE.out0
+vertex LOGICAND30.in0
+attr unit str IFELSE.in0
+vertex LOGICAND30.in1
+attr unit str IFELSE.in1
+vertex LOGICAND30.in2
+attr unit str IFELSE.in2
+vertex LOGICOR30
+attr unit str IFELSE
+attr pattern str PATN_LOGICOR1
+vertex LOGICOR30.out0
+attr unit str IFELSE.out0
+vertex LOGICOR30.in0
+attr unit str IFELSE.in0
+vertex LOGICOR30.in1
+attr unit str IFELSE.in1
+vertex LOGICOR30.in2
+attr unit str IFELSE.in2
+vertex GREATER2
+attr unit str IFELSE
+attr pattern str PATN_GREATER0
+vertex GREATER2.out0
+attr unit str IFELSE.out0
+vertex GREATER2.in0
+attr unit str IFELSE.in0
+vertex GREATER2.in1
+attr unit str IFELSE.in1
+vertex GREATER3
+attr unit str IFELSE
+attr pattern str PATN_GREATER0
+vertex GREATER3.out0
+attr unit str IFELSE.out0
+vertex GREATER3.in0
+attr unit str IFELSE.in0
+vertex GREATER3.in1
+attr unit str IFELSE.in1
+vertex GREATER0
+attr unit str IFELSE
+attr pattern str PATN_GREATER0
+vertex GREATER0.out0
+attr unit str IFELSE.out0
+vertex GREATER0.in0
+attr unit str IFELSE.in0
+vertex GREATER0.in1
+attr unit str IFELSE.in1
+vertex GREATER1
+attr unit str IFELSE
+attr pattern str PATN_GREATER0
+vertex GREATER1.out0
+attr unit str IFELSE.out0
+vertex GREATER1.in0
+attr unit str IFELSE.in0
+vertex GREATER1.in1
+attr unit str IFELSE.in1
+vertex LESS2
+attr unit str IFELSE
+attr pattern str PATN_LESS0
+vertex LESS2.out0
+attr unit str IFELSE.out0
+vertex LESS2.in0
+attr unit str IFELSE.in0
+vertex LESS2.in1
+attr unit str IFELSE.in1
+vertex LESS0
+attr unit str IFELSE
+attr pattern str PATN_LESS0
+vertex LESS0.out0
+attr unit str IFELSE.out0
+vertex LESS0.in0
+attr unit str IFELSE.in0
+vertex LESS0.in1
+attr unit str IFELSE.in1
+vertex LESS1
+attr unit str IFELSE
+attr pattern str PATN_LESS0
+vertex LESS1.out0
+attr unit str IFELSE.out0
+vertex LESS1.in0
+attr unit str IFELSE.in0
+vertex LESS1.in1
+attr unit str IFELSE.in1
+vertex LESS3
+attr unit str IFELSE
+attr pattern str PATN_LESS0
+vertex LESS3.out0
+attr unit str IFELSE.out0
+vertex LESS3.in0
+attr unit str IFELSE.in0
+vertex LESS3.in1
+attr unit str IFELSE.in1
+vertex LOGICAND20
+attr unit str IFELSE
+attr pattern str PATN_LOGICAND0
+vertex LOGICAND20.out0
+attr unit str IFELSE.out0
+vertex LOGICAND20.in0
+attr unit str IFELSE.in0
+vertex LOGICAND20.in1
+attr unit str IFELSE.in1
+vertex INPUT2
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT2.out0
+attr unit str INPUT.out0
+vertex INPUT2.in0
+attr unit str INPUT.in0
+vertex INPUT1
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT1.out0
+attr unit str INPUT.out0
+vertex INPUT1.in0
+attr unit str INPUT.in0
+vertex INPUT3
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT3.out0
+attr unit str INPUT.out0
+vertex INPUT3.in0
+attr unit str INPUT.in0
+vertex INPUT0
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT0.out0
+attr unit str INPUT.out0
+vertex INPUT0.in0
+attr unit str INPUT.in0
+vertex OUTPUT0
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT0.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT0.in0
+attr unit str OUTPUT.in0
+edge CONST2_CONST3 CONST2_CONST3.out1
+edge CONST2_CONST3.out1 GREATER2.in1
+edge CONST2_CONST3.out1 LESS2.in1
+edge CONST1_CONST0 CONST1_CONST0.out1
+edge CONST1_CONST0.out1 GREATER1.in1
+edge CONST1_CONST0.out1 LESS1.in1
+edge LOGICAND40 LOGICAND40.out0
+edge LOGICAND40.out0 LOGICOR30.in2
+edge LOGICAND40.in0 LOGICAND40
+edge LOGICAND40.in1 LOGICAND40
+edge LOGICAND40.in2 LOGICAND40
+edge LOGICAND40.in3 LOGICAND40
+edge LOGICAND30 LOGICAND30.out0
+edge LOGICAND30.out0 LOGICOR30.in0
+edge LOGICAND30.in0 LOGICAND30
+edge LOGICAND30.in1 LOGICAND30
+edge LOGICAND30.in2 LOGICAND30
+edge LOGICOR30 LOGICOR30.out0
+edge LOGICOR30.out0 OUTPUT0.in0
+edge LOGICOR30.in0 LOGICOR30
+edge LOGICOR30.in1 LOGICOR30
+edge LOGICOR30.in2 LOGICOR30
+edge GREATER2 GREATER2.out0
+edge GREATER2.in0 GREATER2
+edge GREATER2.in1 GREATER2
+edge GREATER3 GREATER3.out0
+edge GREATER3.in0 GREATER3
+edge GREATER3.in1 GREATER3
+edge GREATER0 GREATER0.out0
+edge GREATER0.out0 LOGICAND30.in0
+edge GREATER0.out0 LOGICAND20.in0
+edge GREATER0.in0 GREATER0
+edge GREATER0.in1 GREATER0
+edge GREATER1 GREATER1.out0
+edge GREATER1.out0 LOGICAND30.in1
+edge GREATER1.in0 GREATER1
+edge GREATER1.in1 GREATER1
+edge LESS2 LESS2.out0
+edge LESS2.out0 LOGICAND30.in2
+edge LESS2.out0 LOGICAND40.in2
+edge LESS2.in0 LESS2
+edge LESS2.in1 LESS2
+edge LESS0 LESS0.out0
+edge LESS0.out0 LOGICAND40.in0
+edge LESS0.in0 LESS0
+edge LESS0.in1 LESS0
+edge LESS1 LESS1.out0
+edge LESS1.out0 LOGICAND20.in1
+edge LESS1.out0 LOGICAND40.in1
+edge LESS1.in0 LESS1
+edge LESS1.in1 LESS1
+edge LESS3 LESS3.out0
+edge LESS3.out0 LOGICAND40.in3
+edge LESS3.in0 LESS3
+edge LESS3.in1 LESS3
+edge LOGICAND20 LOGICAND20.out0
+edge LOGICAND20.out0 LOGICOR30.in1
+edge LOGICAND20.in0 LOGICAND20
+edge LOGICAND20.in1 LOGICAND20
+edge INPUT2 INPUT2.out0
+edge INPUT2.out0 GREATER2.in0
+edge INPUT2.out0 LESS2.in0
+edge INPUT2.in0 INPUT2
+edge INPUT1 INPUT1.out0
+edge INPUT1.out0 GREATER1.in0
+edge INPUT1.out0 LESS1.in0
+edge INPUT1.in0 INPUT1
+edge INPUT3 INPUT3.out0
+edge INPUT3.out0 GREATER3.in0
+edge INPUT3.out0 LESS3.in0
+edge INPUT3.in0 INPUT3
+edge INPUT0 INPUT0.out0
+edge INPUT0.out0 GREATER0.in0
+edge INPUT0.out0 LESS0.in0
+edge INPUT0.in0 INPUT0
+edge OUTPUT0 OUTPUT0.out0
+edge OUTPUT0.in0 OUTPUT0

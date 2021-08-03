@@ -1,0 +1,6 @@
+mul0 func
+const5 const
+output3 OE
+const1 const
+add4 func
+add2 func

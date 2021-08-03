@@ -1,0 +1,7 @@
+add3 func
+const6 const
+output4 OE
+load2 mem_unit
+const1 const
+add5 func
+mul0 func

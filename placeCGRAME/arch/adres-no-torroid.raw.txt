@@ -1,0 +1,1725 @@
+
+CGRA - Modelling and Exploration Version 1.0 (http://cgra-me.ece.utoronto.ca/)
+Copyright (c) 2015-2018 University of Toronto. All Rights Reserved.
+For research and academic purposes only. Commercial use is prohibited.
+Please email questions to: Xander Chin(xan@ece.utoronto.ca)
+Compiled: Apr  5 2021 16:07:27
+
+[INFO] Creating Architecture from XML...
+meshblock1
+    name  func
+    module  FuncUnit
+    op  add sub mul div and or xor shl shr
+    name  register
+    module  Register
+    to: func.in_a
+from: in_a
+    to: func.in_b
+from: in_b
+    to: register.in
+from: func_out
+meshblock2
+    to: test.in0
+from: this.in0
+    to: test.in1
+from: this.in1
+    to: test.in2
+from: this.in2
+    to: test.in3
+from: this.in3
+    to: this.out
+from: test.out
+diagblock1
+    name  func
+    module  FuncUnit
+    op  add sub mul div and or xor shl shr
+    name  register
+    module  Register
+    to: func.in_a
+from: in_a
+    to: func.in_b
+from: in_b
+    to: register.in
+from: func_out
+IO
+    name  io
+    module  IO
+    to: io.in
+from: this.in
+    to: this.out
+from: io.out
+    to: this.bidir
+from: io.bidir
+MemPort
+    name  mem_port
+    module  MemPort
+    ninput  4
+    to: mem_port.in0
+from: this.in0
+    to: mem_port.in1
+from: this.in1
+    to: mem_port.in2
+from: this.in2
+    to: mem_port.in3
+from: this.in3
+    to: this.out
+from: mem_port.out
+VLIWAdresPE
+    name  func
+    module  FuncUnit
+    op  add sub mul div and or xor shl shra shrl
+    name  mux_out
+    module  Multiplexer
+    ninput  2
+    name  const
+    module  ConstUnit
+    to: this.rf_out
+from: func.out
+    to: mux_out.in1
+from: this.rf_in_muxout
+    to: this.out
+from: mux_out.out
+VLIWAdresPETorroid
+    name  func
+    module  FuncUnit
+    op  add sub mul div and or xor shl shra shrl
+    name  mux_out
+    module  Multiplexer
+    ninput  2
+    name  const
+    module  ConstUnit
+    to: this.rf_out
+from: func.out
+    to: mux_out.in1
+from: this.rf_in_muxout
+    to: this.out
+from: mux_out.out
+CGAAdresPE
+    name  func
+    module  FuncUnit
+    op  add sub
+    name  mux_out
+    module  Multiplexer
+    ninput  2
+    name  const
+    module  ConstUnit
+    to: this.rf_out
+from: func.out
+    to: mux_out.in1
+from: this.rf_in_muxout
+    to: this.out
+from: mux_out.out
+globalRF
+    module  RegisterFile
+    name  rf
+    ninput  4
+    noutput  8
+    log2-nregister  3
+    size  32
+    to: rf.in0
+from: this.in0
+    to: rf.in1
+from: this.in1
+    to: rf.in2
+from: this.in2
+    to: rf.in3
+from: this.in3
+    to: this.out0
+from: rf.out0
+    to: this.out1
+from: rf.out1
+    to: this.out2
+from: rf.out2
+    to: this.out3
+from: rf.out3
+    to: this.out4
+from: rf.out4
+    to: this.out5
+from: rf.out5
+    to: this.out6
+from: rf.out6
+    to: this.out7
+from: rf.out7
+externRF1_1
+    module  RegisterFile
+    name  rf
+    ninput  1
+    noutput  2
+    log2-nregister  1
+    size  32
+    to: rf.in0
+from: this.in0
+    to: this.out0
+from: rf.out0
+    to: this.out1
+from: rf.out1
+externRF2_1
+    module  RegisterFile
+    name  rf
+    ninput  2
+    noutput  4
+    log2-nregister  2
+    size  32
+    to: rf.in0
+from: this.in0
+    to: rf.in1
+from: this.in1
+    to: this.out0
+from: rf.out0
+    to: this.out1
+from: rf.out1
+    to: this.out2
+from: rf.out2
+    to: this.out3
+from: rf.out3
+Looking for patternsLooking for patternsLooking for patternsLooking for patternsLooking for patternsLooking for patternsLooking for patternsUser is referring to relative block
+block_3_0.in7
+block_2_0.out
+User is referring to relative block
+block_3_1.in7
+block_2_0.out
+User is referring to relative block
+block_3_2.in7
+block_2_0.out
+User is referring to relative block
+block_3_3.in7
+block_2_0.out
+User is referring to relative block
+block_2_0.in0
+block_3_0.out
+User is referring to relative block
+block_2_0.in1
+block_3_1.out
+User is referring to relative block
+block_2_0.in2
+block_3_2.out
+User is referring to relative block
+block_2_0.in3
+block_3_3.out
+User is referring to relative block
+block_6_0.in7
+block_5_0.out
+User is referring to relative block
+block_6_1.in7
+block_5_0.out
+User is referring to relative block
+block_6_2.in7
+block_5_0.out
+User is referring to relative block
+block_6_3.in7
+block_5_0.out
+User is referring to relative block
+block_5_0.in0
+block_6_0.out
+User is referring to relative block
+block_5_0.in1
+block_6_1.out
+User is referring to relative block
+block_5_0.in2
+block_6_2.out
+User is referring to relative block
+block_5_0.in3
+block_6_3.out
+User is referring to relative block
+block_9_0.in7
+block_8_0.out
+User is referring to relative block
+block_9_1.in7
+block_8_0.out
+User is referring to relative block
+block_9_2.in7
+block_8_0.out
+User is referring to relative block
+block_9_3.in7
+block_8_0.out
+User is referring to relative block
+block_8_0.in0
+block_9_0.out
+User is referring to relative block
+block_8_0.in1
+block_9_1.out
+User is referring to relative block
+block_8_0.in2
+block_9_2.out
+User is referring to relative block
+block_8_0.in3
+block_9_3.out
+User is referring to relative block
+block_12_0.in7
+block_11_0.out
+User is referring to relative block
+block_12_1.in7
+block_11_0.out
+User is referring to relative block
+block_12_2.in7
+block_11_0.out
+User is referring to relative block
+block_12_3.in7
+block_11_0.out
+User is referring to relative block
+block_11_0.in0
+block_12_0.out
+User is referring to relative block
+block_11_0.in1
+block_12_1.out
+User is referring to relative block
+block_11_0.in2
+block_12_2.out
+User is referring to relative block
+block_11_0.in3
+block_12_3.out
+Looking for patternsUser is referring to relative block
+block_3_0.in0
+block_1_0.out
+User is referring to relative block
+block_1_0.in
+block_3_0.out
+User is referring to relative block
+block_3_1.in0
+block_1_1.out
+User is referring to relative block
+block_1_1.in
+block_3_1.out
+User is referring to relative block
+block_3_2.in0
+block_1_2.out
+User is referring to relative block
+block_1_2.in
+block_3_2.out
+User is referring to relative block
+block_3_3.in0
+block_1_3.out
+User is referring to relative block
+block_1_3.in
+block_3_3.out
+Looking for patternsUser is referring to relative block
+block_3_0.rf_in_muxa
+block_0_0.out0
+User is referring to relative block
+block_3_0.rf_in_muxout
+block_0_0.out1
+User is referring to relative block
+block_0_0.in0
+block_3_0.rf_out
+User is referring to relative block
+block_3_1.rf_in_muxa
+block_0_0.out2
+User is referring to relative block
+block_3_1.rf_in_muxout
+block_0_0.out3
+User is referring to relative block
+block_0_0.in1
+block_3_1.rf_out
+User is referring to relative block
+block_3_2.rf_in_muxa
+block_0_0.out4
+User is referring to relative block
+block_3_2.rf_in_muxout
+block_0_0.out5
+User is referring to relative block
+block_0_0.in2
+block_3_2.rf_out
+User is referring to relative block
+block_3_3.rf_in_muxa
+block_0_0.out6
+User is referring to relative block
+block_3_3.rf_in_muxout
+block_0_0.out7
+User is referring to relative block
+block_0_0.in3
+block_3_3.rf_out
+Looking for patternsUser is referring to relative block
+block_6_0.rf_in_muxa
+block_4_0.out0
+User is referring to relative block
+block_6_0.rf_in_muxout
+block_4_0.out1
+User is referring to relative block
+block_4_0.in0
+block_6_0.rf_out
+User is referring to relative block
+block_6_1.rf_in_muxa
+block_4_1.out0
+User is referring to relative block
+block_6_1.rf_in_muxout
+block_4_1.out1
+User is referring to relative block
+block_4_1.in0
+block_6_1.rf_out
+User is referring to relative block
+block_6_2.rf_in_muxa
+block_4_2.out0
+User is referring to relative block
+block_6_2.rf_in_muxout
+block_4_2.out1
+User is referring to relative block
+block_4_2.in0
+block_6_2.rf_out
+User is referring to relative block
+block_6_3.rf_in_muxa
+block_4_3.out0
+User is referring to relative block
+block_6_3.rf_in_muxout
+block_4_3.out1
+User is referring to relative block
+block_4_3.in0
+block_6_3.rf_out
+User is referring to relative block
+block_9_0.rf_in_muxa
+block_7_0.out0
+User is referring to relative block
+block_9_0.rf_in_muxout
+block_7_0.out1
+User is referring to relative block
+block_7_0.in0
+block_9_0.rf_out
+User is referring to relative block
+block_9_1.rf_in_muxa
+block_7_1.out0
+User is referring to relative block
+block_9_1.rf_in_muxout
+block_7_1.out1
+User is referring to relative block
+block_7_1.in0
+block_9_1.rf_out
+User is referring to relative block
+block_9_2.rf_in_muxa
+block_7_2.out0
+User is referring to relative block
+block_9_2.rf_in_muxout
+block_7_2.out1
+User is referring to relative block
+block_7_2.in0
+block_9_2.rf_out
+User is referring to relative block
+block_9_3.rf_in_muxa
+block_7_3.out0
+User is referring to relative block
+block_9_3.rf_in_muxout
+block_7_3.out1
+User is referring to relative block
+block_7_3.in0
+block_9_3.rf_out
+User is referring to relative block
+block_12_0.rf_in_muxa
+block_10_0.out0
+User is referring to relative block
+block_12_0.rf_in_muxout
+block_10_0.out1
+User is referring to relative block
+block_10_0.in0
+block_12_0.rf_out
+User is referring to relative block
+block_12_1.rf_in_muxa
+block_10_1.out0
+User is referring to relative block
+block_12_1.rf_in_muxout
+block_10_1.out1
+User is referring to relative block
+block_10_1.in0
+block_12_1.rf_out
+User is referring to relative block
+block_12_2.rf_in_muxa
+block_10_2.out0
+User is referring to relative block
+block_12_2.rf_in_muxout
+block_10_2.out1
+User is referring to relative block
+block_10_2.in0
+block_12_2.rf_out
+User is referring to relative block
+block_12_3.rf_in_muxa
+block_10_3.out0
+User is referring to relative block
+block_12_3.rf_in_muxout
+block_10_3.out1
+User is referring to relative block
+block_10_3.in0
+block_12_3.rf_out
+Looking for patternsUser is referring to relative block
+block_6_0.in0
+block_3_0.out
+User is referring to relative block
+block_3_0.in2
+block_6_0.out
+User is referring to relative block
+block_6_1.in0
+block_3_1.out
+User is referring to relative block
+block_3_1.in2
+block_6_1.out
+User is referring to relative block
+block_6_2.in0
+block_3_2.out
+User is referring to relative block
+block_3_2.in2
+block_6_2.out
+User is referring to relative block
+block_6_3.in0
+block_3_3.out
+User is referring to relative block
+block_3_3.in2
+block_6_3.out
+User is referring to relative block
+block_9_0.in0
+block_6_0.out
+User is referring to relative block
+block_6_0.in2
+block_9_0.out
+User is referring to relative block
+block_9_1.in0
+block_6_1.out
+User is referring to relative block
+block_6_1.in2
+block_9_1.out
+User is referring to relative block
+block_9_2.in0
+block_6_2.out
+User is referring to relative block
+block_6_2.in2
+block_9_2.out
+User is referring to relative block
+block_9_3.in0
+block_6_3.out
+User is referring to relative block
+block_6_3.in2
+block_9_3.out
+User is referring to relative block
+block_12_0.in0
+block_9_0.out
+User is referring to relative block
+block_9_0.in2
+block_12_0.out
+User is referring to relative block
+block_12_1.in0
+block_9_1.out
+User is referring to relative block
+block_9_1.in2
+block_12_1.out
+User is referring to relative block
+block_12_2.in0
+block_9_2.out
+User is referring to relative block
+block_9_2.in2
+block_12_2.out
+User is referring to relative block
+block_12_3.in0
+block_9_3.out
+User is referring to relative block
+block_9_3.in2
+block_12_3.out
+Looking for patternsUser is referring to relative block
+block_3_1.in3
+block_3_0.out
+User is referring to relative block
+block_3_0.in1
+block_3_1.out
+User is referring to relative block
+block_3_2.in3
+block_3_1.out
+User is referring to relative block
+block_3_1.in1
+block_3_2.out
+User is referring to relative block
+block_3_3.in3
+block_3_2.out
+User is referring to relative block
+block_3_2.in1
+block_3_3.out
+User is referring to relative block
+block_6_1.in3
+block_6_0.out
+User is referring to relative block
+block_6_0.in1
+block_6_1.out
+User is referring to relative block
+block_6_2.in3
+block_6_1.out
+User is referring to relative block
+block_6_1.in1
+block_6_2.out
+User is referring to relative block
+block_6_3.in3
+block_6_2.out
+User is referring to relative block
+block_6_2.in1
+block_6_3.out
+User is referring to relative block
+block_9_1.in3
+block_9_0.out
+User is referring to relative block
+block_9_0.in1
+block_9_1.out
+User is referring to relative block
+block_9_2.in3
+block_9_1.out
+User is referring to relative block
+block_9_1.in1
+block_9_2.out
+User is referring to relative block
+block_9_3.in3
+block_9_2.out
+User is referring to relative block
+block_9_2.in1
+block_9_3.out
+User is referring to relative block
+block_12_1.in3
+block_12_0.out
+User is referring to relative block
+block_12_0.in1
+block_12_1.out
+User is referring to relative block
+block_12_2.in3
+block_12_1.out
+User is referring to relative block
+block_12_1.in1
+block_12_2.out
+User is referring to relative block
+block_12_3.in3
+block_12_2.out
+User is referring to relative block
+block_12_2.in1
+block_12_3.out
+Looking for patternsUser is referring to relative block
+block_1_0.bidir
+this.bidir0
+User is referring to relative block
+block_1_1.bidir
+this.bidir1
+User is referring to relative block
+block_1_2.bidir
+this.bidir2
+User is referring to relative block
+block_1_3.bidir
+this.bidir3
+
+[ARCHGRAPH]
+CGRA:
+ports:
+bidir0
+bidir1
+bidir2
+bidir3
+connections:
+CGRA<-block_3_0;
+CGRA<-block_3_0;
+CGRA<-block_3_0;
+CGRA<-block_3_1;
+CGRA<-block_3_1;
+CGRA<-block_3_2;
+CGRA<-block_3_2;
+CGRA<-block_3_3;
+CGRA<-block_3_3;
+CGRA<-block_3_1;
+CGRA<-block_3_2;
+CGRA<-block_3_3;
+CGRA<-block_3_0;
+CGRA<-block_3_1;
+CGRA<-block_3_2;
+CGRA<-block_3_3;
+CGRA<-block_6_0;
+CGRA<-block_6_1;
+CGRA<-block_6_2;
+CGRA<-block_6_3;
+CGRA<-block_9_0;
+CGRA<-block_9_1;
+CGRA<-block_9_2;
+CGRA<-block_9_3;
+CGRA<-block_12_0;
+CGRA<-block_12_1;
+CGRA<-block_12_2;
+CGRA<-block_12_3;
+CGRA<-block_6_0;
+CGRA<-block_6_0;
+CGRA<-block_6_1;
+CGRA<-block_6_1;
+CGRA<-block_6_2;
+CGRA<-block_6_2;
+CGRA<-block_6_3;
+CGRA<-block_6_3;
+CGRA<-block_2_0;
+CGRA<-block_1_0;
+CGRA<-block_6_0;
+CGRA<-block_3_1;
+CGRA<-block_0_0;
+CGRA<-block_2_0;
+CGRA<-block_1_1;
+CGRA<-block_6_1;
+CGRA<-block_3_0;
+CGRA<-block_3_2;
+CGRA<-block_0_0;
+CGRA<-block_2_0;
+CGRA<-block_1_2;
+CGRA<-block_6_2;
+CGRA<-block_3_1;
+CGRA<-block_3_3;
+CGRA<-block_0_0;
+CGRA<-block_2_0;
+CGRA<-block_1_3;
+CGRA<-block_6_3;
+CGRA<-block_3_2;
+CGRA<-block_0_0;
+CGRA<-block_9_0;
+CGRA<-block_9_0;
+CGRA<-block_9_1;
+CGRA<-block_9_1;
+CGRA<-block_9_2;
+CGRA<-block_9_2;
+CGRA<-block_9_3;
+CGRA<-block_9_3;
+CGRA<-block_12_0;
+CGRA<-block_12_0;
+CGRA<-block_12_1;
+CGRA<-block_12_1;
+CGRA<-block_12_2;
+CGRA<-block_12_2;
+CGRA<-block_12_3;
+CGRA<-block_12_3;
+CGRA<-block_1_0;
+CGRA<-block_1_1;
+CGRA<-block_1_2;
+CGRA<-block_1_3;
+CGRA<-block_5_0;
+CGRA<-block_3_0;
+CGRA<-block_9_0;
+CGRA<-block_6_1;
+CGRA<-block_4_0;
+CGRA<-block_5_0;
+CGRA<-block_3_1;
+CGRA<-block_9_1;
+CGRA<-block_6_0;
+CGRA<-block_6_2;
+CGRA<-block_4_1;
+CGRA<-block_5_0;
+CGRA<-block_3_2;
+CGRA<-block_9_2;
+CGRA<-block_6_1;
+CGRA<-block_6_3;
+CGRA<-block_4_2;
+CGRA<-block_5_0;
+CGRA<-block_3_3;
+CGRA<-block_9_3;
+CGRA<-block_6_2;
+CGRA<-block_4_3;
+CGRA<-block_8_0;
+CGRA<-block_6_0;
+CGRA<-block_12_0;
+CGRA<-block_9_1;
+CGRA<-block_7_0;
+CGRA<-block_8_0;
+CGRA<-block_6_1;
+CGRA<-block_12_1;
+CGRA<-block_9_0;
+CGRA<-block_9_2;
+CGRA<-block_7_1;
+CGRA<-block_8_0;
+CGRA<-block_6_2;
+CGRA<-block_12_2;
+CGRA<-block_9_1;
+CGRA<-block_9_3;
+CGRA<-block_7_2;
+CGRA<-block_8_0;
+CGRA<-block_6_3;
+CGRA<-block_12_3;
+CGRA<-block_9_2;
+CGRA<-block_7_3;
+CGRA<-block_11_0;
+CGRA<-block_9_0;
+CGRA<-block_12_1;
+CGRA<-block_10_0;
+CGRA<-block_11_0;
+CGRA<-block_9_1;
+CGRA<-block_12_0;
+CGRA<-block_12_2;
+CGRA<-block_10_1;
+CGRA<-block_11_0;
+CGRA<-block_9_2;
+CGRA<-block_12_1;
+CGRA<-block_12_3;
+CGRA<-block_10_2;
+CGRA<-block_11_0;
+CGRA<-block_9_3;
+CGRA<-block_12_2;
+CGRA<-block_10_3;
+submodules:
+block_0_0
+block_10_0
+block_10_1
+block_10_2
+block_10_3
+block_11_0
+block_12_0
+block_12_1
+block_12_2
+block_12_3
+block_1_0
+block_1_1
+block_1_2
+block_1_3
+block_2_0
+block_3_0
+block_3_1
+block_3_2
+block_3_3
+block_4_0
+block_4_1
+block_4_2
+block_4_3
+block_5_0
+block_6_0
+block_6_1
+block_6_2
+block_6_3
+block_7_0
+block_7_1
+block_7_2
+block_7_3
+block_8_0
+block_9_0
+block_9_1
+block_9_2
+block_9_3
+CGRA;
+block_1_0.out->block_3_0.in0;
+block_0_0.out0->block_3_0.rf_in_muxa;
+block_0_0.out1->block_3_0.rf_in_muxout;
+block_0_0.out2->block_3_1.rf_in_muxa;
+block_0_0.out3->block_3_1.rf_in_muxout;
+block_0_0.out4->block_3_2.rf_in_muxa;
+block_0_0.out5->block_3_2.rf_in_muxout;
+block_0_0.out6->block_3_3.rf_in_muxa;
+block_0_0.out7->block_3_3.rf_in_muxout;
+block_1_1.out->block_3_1.in0;
+block_1_2.out->block_3_2.in0;
+block_1_3.out->block_3_3.in0;
+block_2_0.out->block_3_0.in7;
+block_2_0.out->block_3_1.in7;
+block_2_0.out->block_3_2.in7;
+block_2_0.out->block_3_3.in7;
+block_5_0.out->block_6_0.in7;
+block_5_0.out->block_6_1.in7;
+block_5_0.out->block_6_2.in7;
+block_5_0.out->block_6_3.in7;
+block_8_0.out->block_9_0.in7;
+block_8_0.out->block_9_1.in7;
+block_8_0.out->block_9_2.in7;
+block_8_0.out->block_9_3.in7;
+block_11_0.out->block_12_0.in7;
+block_11_0.out->block_12_1.in7;
+block_11_0.out->block_12_2.in7;
+block_11_0.out->block_12_3.in7;
+block_4_0.out0->block_6_0.rf_in_muxa;
+block_4_0.out1->block_6_0.rf_in_muxout;
+block_4_1.out0->block_6_1.rf_in_muxa;
+block_4_1.out1->block_6_1.rf_in_muxout;
+block_4_2.out0->block_6_2.rf_in_muxa;
+block_4_2.out1->block_6_2.rf_in_muxout;
+block_4_3.out0->block_6_3.rf_in_muxa;
+block_4_3.out1->block_6_3.rf_in_muxout;
+block_3_0.out->block_2_0.in0;
+block_3_0.out->block_1_0.in;
+block_3_0.out->block_6_0.in0;
+block_3_0.out->block_3_1.in3;
+block_3_0.rf_out->block_0_0.in0;
+block_3_1.out->block_2_0.in1;
+block_3_1.out->block_1_1.in;
+block_3_1.out->block_6_1.in0;
+block_3_1.out->block_3_0.in1;
+block_3_1.out->block_3_2.in3;
+block_3_1.rf_out->block_0_0.in1;
+block_3_2.out->block_2_0.in2;
+block_3_2.out->block_1_2.in;
+block_3_2.out->block_6_2.in0;
+block_3_2.out->block_3_1.in1;
+block_3_2.out->block_3_3.in3;
+block_3_2.rf_out->block_0_0.in2;
+block_3_3.out->block_2_0.in3;
+block_3_3.out->block_1_3.in;
+block_3_3.out->block_6_3.in0;
+block_3_3.out->block_3_2.in1;
+block_3_3.rf_out->block_0_0.in3;
+block_7_0.out0->block_9_0.rf_in_muxa;
+block_7_0.out1->block_9_0.rf_in_muxout;
+block_7_1.out0->block_9_1.rf_in_muxa;
+block_7_1.out1->block_9_1.rf_in_muxout;
+block_7_2.out0->block_9_2.rf_in_muxa;
+block_7_2.out1->block_9_2.rf_in_muxout;
+block_7_3.out0->block_9_3.rf_in_muxa;
+block_7_3.out1->block_9_3.rf_in_muxout;
+block_10_0.out0->block_12_0.rf_in_muxa;
+block_10_0.out1->block_12_0.rf_in_muxout;
+block_10_1.out0->block_12_1.rf_in_muxa;
+block_10_1.out1->block_12_1.rf_in_muxout;
+block_10_2.out0->block_12_2.rf_in_muxa;
+block_10_2.out1->block_12_2.rf_in_muxout;
+block_10_3.out0->block_12_3.rf_in_muxa;
+block_10_3.out1->block_12_3.rf_in_muxout;
+CGRA.bidir0->block_1_0.bidir;
+CGRA.bidir1->block_1_1.bidir;
+CGRA.bidir2->block_1_2.bidir;
+CGRA.bidir3->block_1_3.bidir;
+block_6_0.out->block_5_0.in0;
+block_6_0.out->block_3_0.in2;
+block_6_0.out->block_9_0.in0;
+block_6_0.out->block_6_1.in3;
+block_6_0.rf_out->block_4_0.in0;
+block_6_1.out->block_5_0.in1;
+block_6_1.out->block_3_1.in2;
+block_6_1.out->block_9_1.in0;
+block_6_1.out->block_6_0.in1;
+block_6_1.out->block_6_2.in3;
+block_6_1.rf_out->block_4_1.in0;
+block_6_2.out->block_5_0.in2;
+block_6_2.out->block_3_2.in2;
+block_6_2.out->block_9_2.in0;
+block_6_2.out->block_6_1.in1;
+block_6_2.out->block_6_3.in3;
+block_6_2.rf_out->block_4_2.in0;
+block_6_3.out->block_5_0.in3;
+block_6_3.out->block_3_3.in2;
+block_6_3.out->block_9_3.in0;
+block_6_3.out->block_6_2.in1;
+block_6_3.rf_out->block_4_3.in0;
+block_9_0.out->block_8_0.in0;
+block_9_0.out->block_6_0.in2;
+block_9_0.out->block_12_0.in0;
+block_9_0.out->block_9_1.in3;
+block_9_0.rf_out->block_7_0.in0;
+block_9_1.out->block_8_0.in1;
+block_9_1.out->block_6_1.in2;
+block_9_1.out->block_12_1.in0;
+block_9_1.out->block_9_0.in1;
+block_9_1.out->block_9_2.in3;
+block_9_1.rf_out->block_7_1.in0;
+block_9_2.out->block_8_0.in2;
+block_9_2.out->block_6_2.in2;
+block_9_2.out->block_12_2.in0;
+block_9_2.out->block_9_1.in1;
+block_9_2.out->block_9_3.in3;
+block_9_2.rf_out->block_7_2.in0;
+block_9_3.out->block_8_0.in3;
+block_9_3.out->block_6_3.in2;
+block_9_3.out->block_12_3.in0;
+block_9_3.out->block_9_2.in1;
+block_9_3.rf_out->block_7_3.in0;
+block_12_0.out->block_11_0.in0;
+block_12_0.out->block_9_0.in2;
+block_12_0.out->block_12_1.in3;
+block_12_0.rf_out->block_10_0.in0;
+block_12_1.out->block_11_0.in1;
+block_12_1.out->block_9_1.in2;
+block_12_1.out->block_12_0.in1;
+block_12_1.out->block_12_2.in3;
+block_12_1.rf_out->block_10_1.in0;
+block_12_2.out->block_11_0.in2;
+block_12_2.out->block_9_2.in2;
+block_12_2.out->block_12_1.in1;
+block_12_2.out->block_12_3.in3;
+block_12_2.rf_out->block_10_2.in0;
+block_12_3.out->block_11_0.in3;
+block_12_3.out->block_9_3.in2;
+block_12_3.out->block_12_2.in1;
+block_12_3.rf_out->block_10_3.in0;
+
+    block_0_0;
+    block_0_0.in3->rf.in3;
+    block_0_0.in2->rf.in2;
+    block_0_0.in0->rf.in0;
+    block_0_0.in1->rf.in1;
+    rf.out0->block_0_0.out0;
+    rf.out1->block_0_0.out1;
+    rf.out2->block_0_0.out2;
+    rf.out3->block_0_0.out3;
+    rf.out4->block_0_0.out4;
+    rf.out5->block_0_0.out5;
+    rf.out6->block_0_0.out6;
+    rf.out7->block_0_0.out7;
+
+    block_10_0;
+    block_10_0.in0->rf.in0;
+    rf.out0->block_10_0.out0;
+    rf.out1->block_10_0.out1;
+
+    block_10_1;
+    block_10_1.in0->rf.in0;
+    rf.out0->block_10_1.out0;
+    rf.out1->block_10_1.out1;
+
+    block_10_2;
+    block_10_2.in0->rf.in0;
+    rf.out0->block_10_2.out0;
+    rf.out1->block_10_2.out1;
+
+    block_10_3;
+    block_10_3.in0->rf.in0;
+    rf.out0->block_10_3.out0;
+    rf.out1->block_10_3.out1;
+
+    block_11_0;
+    block_11_0.in0->mem_port.in0;
+    block_11_0.in1->mem_port.in1;
+    block_11_0.in2->mem_port.in2;
+    block_11_0.in3->mem_port.in3;
+    mem_port.out->block_11_0.out;
+
+        mem_port;
+        mem_port.in0->mux_data.in0;
+        mem_port.in0->mux_addr.in0;
+        mem_port.in1->mux_data.in1;
+        mem_port.in1->mux_addr.in1;
+        mem_port.in2->mux_data.in2;
+        mem_port.in2->mux_addr.in2;
+        mem_port.in3->mux_data.in3;
+        mem_port.in3->mux_addr.in3;
+        mem_unit.data_out->mem_port.out;
+        mux_addr.out->mem_unit.addr;
+        mux_data.out->mem_unit.data_in;
+
+            mem_unit;
+
+    block_12_0;
+    block_12_0.in0->CGAAdresPE_mux0.in0;
+    block_12_0.in0->CGAAdresPE_mux1.in0;
+    block_12_0.in0->CGAAdresPE_mux2.in0;
+    block_12_0.in1->CGAAdresPE_mux0.in1;
+    block_12_0.in1->CGAAdresPE_mux1.in1;
+    block_12_0.in1->CGAAdresPE_mux2.in1;
+    block_12_0.in2->CGAAdresPE_mux0.in2;
+    block_12_0.in2->CGAAdresPE_mux1.in2;
+    block_12_0.in2->CGAAdresPE_mux2.in2;
+    block_12_0.in3->CGAAdresPE_mux0.in3;
+    block_12_0.in3->CGAAdresPE_mux1.in3;
+    block_12_0.in3->CGAAdresPE_mux2.in3;
+    block_12_0.in4->CGAAdresPE_mux0.in4;
+    block_12_0.in4->CGAAdresPE_mux1.in4;
+    block_12_0.in4->CGAAdresPE_mux2.in4;
+    block_12_0.in5->CGAAdresPE_mux0.in5;
+    block_12_0.in5->CGAAdresPE_mux1.in5;
+    block_12_0.in5->CGAAdresPE_mux2.in5;
+    block_12_0.in6->CGAAdresPE_mux0.in6;
+    block_12_0.in6->CGAAdresPE_mux1.in6;
+    block_12_0.in6->CGAAdresPE_mux2.in6;
+    block_12_0.in7->CGAAdresPE_mux0.in7;
+    block_12_0.in7->CGAAdresPE_mux1.in7;
+    block_12_0.in7->CGAAdresPE_mux2.in7;
+    block_12_0.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_12_0.rf_in_muxout->mux_out.in1;
+    func.out->block_12_0.rf_out;
+    mux_out.out->block_12_0.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_12_1;
+    block_12_1.in1->CGAAdresPE_mux0.in1;
+    block_12_1.in1->CGAAdresPE_mux1.in1;
+    block_12_1.in1->CGAAdresPE_mux2.in1;
+    block_12_1.in0->CGAAdresPE_mux0.in0;
+    block_12_1.in0->CGAAdresPE_mux1.in0;
+    block_12_1.in0->CGAAdresPE_mux2.in0;
+    block_12_1.in2->CGAAdresPE_mux0.in2;
+    block_12_1.in2->CGAAdresPE_mux1.in2;
+    block_12_1.in2->CGAAdresPE_mux2.in2;
+    block_12_1.in3->CGAAdresPE_mux0.in3;
+    block_12_1.in3->CGAAdresPE_mux1.in3;
+    block_12_1.in3->CGAAdresPE_mux2.in3;
+    block_12_1.in4->CGAAdresPE_mux0.in4;
+    block_12_1.in4->CGAAdresPE_mux1.in4;
+    block_12_1.in4->CGAAdresPE_mux2.in4;
+    block_12_1.in5->CGAAdresPE_mux0.in5;
+    block_12_1.in5->CGAAdresPE_mux1.in5;
+    block_12_1.in5->CGAAdresPE_mux2.in5;
+    block_12_1.in6->CGAAdresPE_mux0.in6;
+    block_12_1.in6->CGAAdresPE_mux1.in6;
+    block_12_1.in6->CGAAdresPE_mux2.in6;
+    block_12_1.in7->CGAAdresPE_mux0.in7;
+    block_12_1.in7->CGAAdresPE_mux1.in7;
+    block_12_1.in7->CGAAdresPE_mux2.in7;
+    block_12_1.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_12_1.rf_in_muxout->mux_out.in1;
+    func.out->block_12_1.rf_out;
+    mux_out.out->block_12_1.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_12_2;
+    block_12_2.in1->CGAAdresPE_mux0.in1;
+    block_12_2.in1->CGAAdresPE_mux1.in1;
+    block_12_2.in1->CGAAdresPE_mux2.in1;
+    block_12_2.in0->CGAAdresPE_mux0.in0;
+    block_12_2.in0->CGAAdresPE_mux1.in0;
+    block_12_2.in0->CGAAdresPE_mux2.in0;
+    block_12_2.in2->CGAAdresPE_mux0.in2;
+    block_12_2.in2->CGAAdresPE_mux1.in2;
+    block_12_2.in2->CGAAdresPE_mux2.in2;
+    block_12_2.in3->CGAAdresPE_mux0.in3;
+    block_12_2.in3->CGAAdresPE_mux1.in3;
+    block_12_2.in3->CGAAdresPE_mux2.in3;
+    block_12_2.in4->CGAAdresPE_mux0.in4;
+    block_12_2.in4->CGAAdresPE_mux1.in4;
+    block_12_2.in4->CGAAdresPE_mux2.in4;
+    block_12_2.in5->CGAAdresPE_mux0.in5;
+    block_12_2.in5->CGAAdresPE_mux1.in5;
+    block_12_2.in5->CGAAdresPE_mux2.in5;
+    block_12_2.in6->CGAAdresPE_mux0.in6;
+    block_12_2.in6->CGAAdresPE_mux1.in6;
+    block_12_2.in6->CGAAdresPE_mux2.in6;
+    block_12_2.in7->CGAAdresPE_mux0.in7;
+    block_12_2.in7->CGAAdresPE_mux1.in7;
+    block_12_2.in7->CGAAdresPE_mux2.in7;
+    block_12_2.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_12_2.rf_in_muxout->mux_out.in1;
+    func.out->block_12_2.rf_out;
+    mux_out.out->block_12_2.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_12_3;
+    block_12_3.in0->CGAAdresPE_mux0.in0;
+    block_12_3.in0->CGAAdresPE_mux1.in0;
+    block_12_3.in0->CGAAdresPE_mux2.in0;
+    block_12_3.in1->CGAAdresPE_mux0.in1;
+    block_12_3.in1->CGAAdresPE_mux1.in1;
+    block_12_3.in1->CGAAdresPE_mux2.in1;
+    block_12_3.in2->CGAAdresPE_mux0.in2;
+    block_12_3.in2->CGAAdresPE_mux1.in2;
+    block_12_3.in2->CGAAdresPE_mux2.in2;
+    block_12_3.in3->CGAAdresPE_mux0.in3;
+    block_12_3.in3->CGAAdresPE_mux1.in3;
+    block_12_3.in3->CGAAdresPE_mux2.in3;
+    block_12_3.in4->CGAAdresPE_mux0.in4;
+    block_12_3.in4->CGAAdresPE_mux1.in4;
+    block_12_3.in4->CGAAdresPE_mux2.in4;
+    block_12_3.in5->CGAAdresPE_mux0.in5;
+    block_12_3.in5->CGAAdresPE_mux1.in5;
+    block_12_3.in5->CGAAdresPE_mux2.in5;
+    block_12_3.in6->CGAAdresPE_mux0.in6;
+    block_12_3.in6->CGAAdresPE_mux1.in6;
+    block_12_3.in6->CGAAdresPE_mux2.in6;
+    block_12_3.in7->CGAAdresPE_mux0.in7;
+    block_12_3.in7->CGAAdresPE_mux1.in7;
+    block_12_3.in7->CGAAdresPE_mux2.in7;
+    block_12_3.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_12_3.rf_in_muxout->mux_out.in1;
+    func.out->block_12_3.rf_out;
+    mux_out.out->block_12_3.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_1_0;
+    io.out->block_1_0.out;
+    io.bidir->block_1_0.bidir;
+    block_1_0.in->io.in;
+
+        io;
+        io.in->reg_in.in;
+        io.bidir->reg_out.in;
+        reg_in.out->OE.in;
+        reg_out.out->io.out;
+        OE.out->io.bidir;
+
+    block_1_1;
+    block_1_1.in->io.in;
+    io.out->block_1_1.out;
+    io.bidir->block_1_1.bidir;
+
+        io;
+        io.in->reg_in.in;
+        io.bidir->reg_out.in;
+        reg_in.out->OE.in;
+        reg_out.out->io.out;
+        OE.out->io.bidir;
+
+    block_1_2;
+    block_1_2.in->io.in;
+    io.out->block_1_2.out;
+    io.bidir->block_1_2.bidir;
+
+        io;
+        io.in->reg_in.in;
+        io.bidir->reg_out.in;
+        reg_in.out->OE.in;
+        reg_out.out->io.out;
+        OE.out->io.bidir;
+
+    block_1_3;
+    block_1_3.in->io.in;
+    io.out->block_1_3.out;
+    io.bidir->block_1_3.bidir;
+
+        io;
+        io.in->reg_in.in;
+        io.bidir->reg_out.in;
+        reg_in.out->OE.in;
+        reg_out.out->io.out;
+        OE.out->io.bidir;
+
+    block_2_0;
+    block_2_0.in0->mem_port.in0;
+    block_2_0.in1->mem_port.in1;
+    block_2_0.in2->mem_port.in2;
+    block_2_0.in3->mem_port.in3;
+    mem_port.out->block_2_0.out;
+
+        mem_port;
+        mem_port.in0->mux_data.in0;
+        mem_port.in0->mux_addr.in0;
+        mem_port.in1->mux_data.in1;
+        mem_port.in1->mux_addr.in1;
+        mem_port.in2->mux_data.in2;
+        mem_port.in2->mux_addr.in2;
+        mem_port.in3->mux_data.in3;
+        mem_port.in3->mux_addr.in3;
+        mem_unit.data_out->mem_port.out;
+        mux_addr.out->mem_unit.addr;
+        mux_data.out->mem_unit.data_in;
+
+            mem_unit;
+
+    block_3_0;
+    block_3_0.in1->VLIWAdresPE_mux0.in1;
+    block_3_0.in1->VLIWAdresPE_mux1.in1;
+    block_3_0.in1->VLIWAdresPE_mux2.in1;
+    block_3_0.in0->VLIWAdresPE_mux0.in0;
+    block_3_0.in0->VLIWAdresPE_mux1.in0;
+    block_3_0.in0->VLIWAdresPE_mux2.in0;
+    block_3_0.in2->VLIWAdresPE_mux0.in2;
+    block_3_0.in2->VLIWAdresPE_mux1.in2;
+    block_3_0.in2->VLIWAdresPE_mux2.in2;
+    block_3_0.in3->VLIWAdresPE_mux0.in3;
+    block_3_0.in3->VLIWAdresPE_mux1.in3;
+    block_3_0.in3->VLIWAdresPE_mux2.in3;
+    block_3_0.in4->VLIWAdresPE_mux0.in4;
+    block_3_0.in4->VLIWAdresPE_mux1.in4;
+    block_3_0.in4->VLIWAdresPE_mux2.in4;
+    block_3_0.in5->VLIWAdresPE_mux0.in5;
+    block_3_0.in5->VLIWAdresPE_mux1.in5;
+    block_3_0.in5->VLIWAdresPE_mux2.in5;
+    block_3_0.in6->VLIWAdresPE_mux0.in6;
+    block_3_0.in6->VLIWAdresPE_mux1.in6;
+    block_3_0.in6->VLIWAdresPE_mux2.in6;
+    block_3_0.in7->VLIWAdresPE_mux0.in7;
+    block_3_0.in7->VLIWAdresPE_mux1.in7;
+    block_3_0.in7->VLIWAdresPE_mux2.in7;
+    block_3_0.rf_in_muxa->VLIWAdresPE_mux0.in9;
+    block_3_0.rf_in_muxout->mux_out.in1;
+    func.out->block_3_0.rf_out;
+    mux_out.out->block_3_0.out;
+    const.out->VLIWAdresPE_mux0.in8;
+    const.out->VLIWAdresPE_mux1.in8;
+    VLIWAdresPE_mux0.out->func.in_a;
+    VLIWAdresPE_mux1.out->func.in_b;
+    VLIWAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_3_1;
+    block_3_1.in0->VLIWAdresPE_mux0.in0;
+    block_3_1.in0->VLIWAdresPE_mux1.in0;
+    block_3_1.in0->VLIWAdresPE_mux2.in0;
+    block_3_1.in1->VLIWAdresPE_mux0.in1;
+    block_3_1.in1->VLIWAdresPE_mux1.in1;
+    block_3_1.in1->VLIWAdresPE_mux2.in1;
+    block_3_1.in2->VLIWAdresPE_mux0.in2;
+    block_3_1.in2->VLIWAdresPE_mux1.in2;
+    block_3_1.in2->VLIWAdresPE_mux2.in2;
+    block_3_1.in3->VLIWAdresPE_mux0.in3;
+    block_3_1.in3->VLIWAdresPE_mux1.in3;
+    block_3_1.in3->VLIWAdresPE_mux2.in3;
+    block_3_1.in4->VLIWAdresPE_mux0.in4;
+    block_3_1.in4->VLIWAdresPE_mux1.in4;
+    block_3_1.in4->VLIWAdresPE_mux2.in4;
+    block_3_1.in5->VLIWAdresPE_mux0.in5;
+    block_3_1.in5->VLIWAdresPE_mux1.in5;
+    block_3_1.in5->VLIWAdresPE_mux2.in5;
+    block_3_1.in6->VLIWAdresPE_mux0.in6;
+    block_3_1.in6->VLIWAdresPE_mux1.in6;
+    block_3_1.in6->VLIWAdresPE_mux2.in6;
+    block_3_1.in7->VLIWAdresPE_mux0.in7;
+    block_3_1.in7->VLIWAdresPE_mux1.in7;
+    block_3_1.in7->VLIWAdresPE_mux2.in7;
+    block_3_1.rf_in_muxa->VLIWAdresPE_mux0.in9;
+    block_3_1.rf_in_muxout->mux_out.in1;
+    func.out->block_3_1.rf_out;
+    mux_out.out->block_3_1.out;
+    const.out->VLIWAdresPE_mux0.in8;
+    const.out->VLIWAdresPE_mux1.in8;
+    VLIWAdresPE_mux0.out->func.in_a;
+    VLIWAdresPE_mux1.out->func.in_b;
+    VLIWAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_3_2;
+    block_3_2.in0->VLIWAdresPE_mux0.in0;
+    block_3_2.in0->VLIWAdresPE_mux1.in0;
+    block_3_2.in0->VLIWAdresPE_mux2.in0;
+    block_3_2.in1->VLIWAdresPE_mux0.in1;
+    block_3_2.in1->VLIWAdresPE_mux1.in1;
+    block_3_2.in1->VLIWAdresPE_mux2.in1;
+    block_3_2.in2->VLIWAdresPE_mux0.in2;
+    block_3_2.in2->VLIWAdresPE_mux1.in2;
+    block_3_2.in2->VLIWAdresPE_mux2.in2;
+    block_3_2.in3->VLIWAdresPE_mux0.in3;
+    block_3_2.in3->VLIWAdresPE_mux1.in3;
+    block_3_2.in3->VLIWAdresPE_mux2.in3;
+    block_3_2.in4->VLIWAdresPE_mux0.in4;
+    block_3_2.in4->VLIWAdresPE_mux1.in4;
+    block_3_2.in4->VLIWAdresPE_mux2.in4;
+    block_3_2.in5->VLIWAdresPE_mux0.in5;
+    block_3_2.in5->VLIWAdresPE_mux1.in5;
+    block_3_2.in5->VLIWAdresPE_mux2.in5;
+    block_3_2.in6->VLIWAdresPE_mux0.in6;
+    block_3_2.in6->VLIWAdresPE_mux1.in6;
+    block_3_2.in6->VLIWAdresPE_mux2.in6;
+    block_3_2.in7->VLIWAdresPE_mux0.in7;
+    block_3_2.in7->VLIWAdresPE_mux1.in7;
+    block_3_2.in7->VLIWAdresPE_mux2.in7;
+    block_3_2.rf_in_muxa->VLIWAdresPE_mux0.in9;
+    block_3_2.rf_in_muxout->mux_out.in1;
+    func.out->block_3_2.rf_out;
+    mux_out.out->block_3_2.out;
+    const.out->VLIWAdresPE_mux0.in8;
+    const.out->VLIWAdresPE_mux1.in8;
+    VLIWAdresPE_mux0.out->func.in_a;
+    VLIWAdresPE_mux1.out->func.in_b;
+    VLIWAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_3_3;
+    block_3_3.in0->VLIWAdresPE_mux0.in0;
+    block_3_3.in0->VLIWAdresPE_mux1.in0;
+    block_3_3.in0->VLIWAdresPE_mux2.in0;
+    block_3_3.in1->VLIWAdresPE_mux0.in1;
+    block_3_3.in1->VLIWAdresPE_mux1.in1;
+    block_3_3.in1->VLIWAdresPE_mux2.in1;
+    block_3_3.in2->VLIWAdresPE_mux0.in2;
+    block_3_3.in2->VLIWAdresPE_mux1.in2;
+    block_3_3.in2->VLIWAdresPE_mux2.in2;
+    block_3_3.in3->VLIWAdresPE_mux0.in3;
+    block_3_3.in3->VLIWAdresPE_mux1.in3;
+    block_3_3.in3->VLIWAdresPE_mux2.in3;
+    block_3_3.in4->VLIWAdresPE_mux0.in4;
+    block_3_3.in4->VLIWAdresPE_mux1.in4;
+    block_3_3.in4->VLIWAdresPE_mux2.in4;
+    block_3_3.in5->VLIWAdresPE_mux0.in5;
+    block_3_3.in5->VLIWAdresPE_mux1.in5;
+    block_3_3.in5->VLIWAdresPE_mux2.in5;
+    block_3_3.in6->VLIWAdresPE_mux0.in6;
+    block_3_3.in6->VLIWAdresPE_mux1.in6;
+    block_3_3.in6->VLIWAdresPE_mux2.in6;
+    block_3_3.in7->VLIWAdresPE_mux0.in7;
+    block_3_3.in7->VLIWAdresPE_mux1.in7;
+    block_3_3.in7->VLIWAdresPE_mux2.in7;
+    block_3_3.rf_in_muxa->VLIWAdresPE_mux0.in9;
+    block_3_3.rf_in_muxout->mux_out.in1;
+    func.out->block_3_3.rf_out;
+    mux_out.out->block_3_3.out;
+    const.out->VLIWAdresPE_mux0.in8;
+    const.out->VLIWAdresPE_mux1.in8;
+    VLIWAdresPE_mux0.out->func.in_a;
+    VLIWAdresPE_mux1.out->func.in_b;
+    VLIWAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_4_0;
+    block_4_0.in0->rf.in0;
+    rf.out0->block_4_0.out0;
+    rf.out1->block_4_0.out1;
+
+    block_4_1;
+    block_4_1.in0->rf.in0;
+    rf.out0->block_4_1.out0;
+    rf.out1->block_4_1.out1;
+
+    block_4_2;
+    block_4_2.in0->rf.in0;
+    rf.out0->block_4_2.out0;
+    rf.out1->block_4_2.out1;
+
+    block_4_3;
+    block_4_3.in0->rf.in0;
+    rf.out0->block_4_3.out0;
+    rf.out1->block_4_3.out1;
+
+    block_5_0;
+    block_5_0.in0->mem_port.in0;
+    block_5_0.in1->mem_port.in1;
+    block_5_0.in2->mem_port.in2;
+    block_5_0.in3->mem_port.in3;
+    mem_port.out->block_5_0.out;
+
+        mem_port;
+        mem_port.in0->mux_data.in0;
+        mem_port.in0->mux_addr.in0;
+        mem_port.in1->mux_data.in1;
+        mem_port.in1->mux_addr.in1;
+        mem_port.in2->mux_data.in2;
+        mem_port.in2->mux_addr.in2;
+        mem_port.in3->mux_data.in3;
+        mem_port.in3->mux_addr.in3;
+        mem_unit.data_out->mem_port.out;
+        mux_addr.out->mem_unit.addr;
+        mux_data.out->mem_unit.data_in;
+
+            mem_unit;
+
+    block_6_0;
+    block_6_0.in0->CGAAdresPE_mux0.in0;
+    block_6_0.in0->CGAAdresPE_mux1.in0;
+    block_6_0.in0->CGAAdresPE_mux2.in0;
+    block_6_0.in1->CGAAdresPE_mux0.in1;
+    block_6_0.in1->CGAAdresPE_mux1.in1;
+    block_6_0.in1->CGAAdresPE_mux2.in1;
+    block_6_0.in2->CGAAdresPE_mux0.in2;
+    block_6_0.in2->CGAAdresPE_mux1.in2;
+    block_6_0.in2->CGAAdresPE_mux2.in2;
+    block_6_0.in3->CGAAdresPE_mux0.in3;
+    block_6_0.in3->CGAAdresPE_mux1.in3;
+    block_6_0.in3->CGAAdresPE_mux2.in3;
+    block_6_0.in4->CGAAdresPE_mux0.in4;
+    block_6_0.in4->CGAAdresPE_mux1.in4;
+    block_6_0.in4->CGAAdresPE_mux2.in4;
+    block_6_0.in5->CGAAdresPE_mux0.in5;
+    block_6_0.in5->CGAAdresPE_mux1.in5;
+    block_6_0.in5->CGAAdresPE_mux2.in5;
+    block_6_0.in6->CGAAdresPE_mux0.in6;
+    block_6_0.in6->CGAAdresPE_mux1.in6;
+    block_6_0.in6->CGAAdresPE_mux2.in6;
+    block_6_0.in7->CGAAdresPE_mux0.in7;
+    block_6_0.in7->CGAAdresPE_mux1.in7;
+    block_6_0.in7->CGAAdresPE_mux2.in7;
+    block_6_0.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_6_0.rf_in_muxout->mux_out.in1;
+    func.out->block_6_0.rf_out;
+    mux_out.out->block_6_0.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_6_1;
+    block_6_1.in0->CGAAdresPE_mux0.in0;
+    block_6_1.in0->CGAAdresPE_mux1.in0;
+    block_6_1.in0->CGAAdresPE_mux2.in0;
+    block_6_1.in1->CGAAdresPE_mux0.in1;
+    block_6_1.in1->CGAAdresPE_mux1.in1;
+    block_6_1.in1->CGAAdresPE_mux2.in1;
+    block_6_1.in2->CGAAdresPE_mux0.in2;
+    block_6_1.in2->CGAAdresPE_mux1.in2;
+    block_6_1.in2->CGAAdresPE_mux2.in2;
+    block_6_1.in3->CGAAdresPE_mux0.in3;
+    block_6_1.in3->CGAAdresPE_mux1.in3;
+    block_6_1.in3->CGAAdresPE_mux2.in3;
+    block_6_1.in4->CGAAdresPE_mux0.in4;
+    block_6_1.in4->CGAAdresPE_mux1.in4;
+    block_6_1.in4->CGAAdresPE_mux2.in4;
+    block_6_1.in5->CGAAdresPE_mux0.in5;
+    block_6_1.in5->CGAAdresPE_mux1.in5;
+    block_6_1.in5->CGAAdresPE_mux2.in5;
+    block_6_1.in6->CGAAdresPE_mux0.in6;
+    block_6_1.in6->CGAAdresPE_mux1.in6;
+    block_6_1.in6->CGAAdresPE_mux2.in6;
+    block_6_1.in7->CGAAdresPE_mux0.in7;
+    block_6_1.in7->CGAAdresPE_mux1.in7;
+    block_6_1.in7->CGAAdresPE_mux2.in7;
+    block_6_1.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_6_1.rf_in_muxout->mux_out.in1;
+    func.out->block_6_1.rf_out;
+    mux_out.out->block_6_1.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_6_2;
+    block_6_2.in0->CGAAdresPE_mux0.in0;
+    block_6_2.in0->CGAAdresPE_mux1.in0;
+    block_6_2.in0->CGAAdresPE_mux2.in0;
+    block_6_2.in1->CGAAdresPE_mux0.in1;
+    block_6_2.in1->CGAAdresPE_mux1.in1;
+    block_6_2.in1->CGAAdresPE_mux2.in1;
+    block_6_2.in2->CGAAdresPE_mux0.in2;
+    block_6_2.in2->CGAAdresPE_mux1.in2;
+    block_6_2.in2->CGAAdresPE_mux2.in2;
+    block_6_2.in3->CGAAdresPE_mux0.in3;
+    block_6_2.in3->CGAAdresPE_mux1.in3;
+    block_6_2.in3->CGAAdresPE_mux2.in3;
+    block_6_2.in4->CGAAdresPE_mux0.in4;
+    block_6_2.in4->CGAAdresPE_mux1.in4;
+    block_6_2.in4->CGAAdresPE_mux2.in4;
+    block_6_2.in5->CGAAdresPE_mux0.in5;
+    block_6_2.in5->CGAAdresPE_mux1.in5;
+    block_6_2.in5->CGAAdresPE_mux2.in5;
+    block_6_2.in6->CGAAdresPE_mux0.in6;
+    block_6_2.in6->CGAAdresPE_mux1.in6;
+    block_6_2.in6->CGAAdresPE_mux2.in6;
+    block_6_2.in7->CGAAdresPE_mux0.in7;
+    block_6_2.in7->CGAAdresPE_mux1.in7;
+    block_6_2.in7->CGAAdresPE_mux2.in7;
+    block_6_2.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_6_2.rf_in_muxout->mux_out.in1;
+    func.out->block_6_2.rf_out;
+    mux_out.out->block_6_2.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_6_3;
+    block_6_3.in0->CGAAdresPE_mux0.in0;
+    block_6_3.in0->CGAAdresPE_mux1.in0;
+    block_6_3.in0->CGAAdresPE_mux2.in0;
+    block_6_3.in1->CGAAdresPE_mux0.in1;
+    block_6_3.in1->CGAAdresPE_mux1.in1;
+    block_6_3.in1->CGAAdresPE_mux2.in1;
+    block_6_3.in2->CGAAdresPE_mux0.in2;
+    block_6_3.in2->CGAAdresPE_mux1.in2;
+    block_6_3.in2->CGAAdresPE_mux2.in2;
+    block_6_3.in3->CGAAdresPE_mux0.in3;
+    block_6_3.in3->CGAAdresPE_mux1.in3;
+    block_6_3.in3->CGAAdresPE_mux2.in3;
+    block_6_3.in4->CGAAdresPE_mux0.in4;
+    block_6_3.in4->CGAAdresPE_mux1.in4;
+    block_6_3.in4->CGAAdresPE_mux2.in4;
+    block_6_3.in5->CGAAdresPE_mux0.in5;
+    block_6_3.in5->CGAAdresPE_mux1.in5;
+    block_6_3.in5->CGAAdresPE_mux2.in5;
+    block_6_3.in6->CGAAdresPE_mux0.in6;
+    block_6_3.in6->CGAAdresPE_mux1.in6;
+    block_6_3.in6->CGAAdresPE_mux2.in6;
+    block_6_3.in7->CGAAdresPE_mux0.in7;
+    block_6_3.in7->CGAAdresPE_mux1.in7;
+    block_6_3.in7->CGAAdresPE_mux2.in7;
+    block_6_3.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_6_3.rf_in_muxout->mux_out.in1;
+    func.out->block_6_3.rf_out;
+    mux_out.out->block_6_3.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_7_0;
+    block_7_0.in0->rf.in0;
+    rf.out0->block_7_0.out0;
+    rf.out1->block_7_0.out1;
+
+    block_7_1;
+    block_7_1.in0->rf.in0;
+    rf.out0->block_7_1.out0;
+    rf.out1->block_7_1.out1;
+
+    block_7_2;
+    block_7_2.in0->rf.in0;
+    rf.out0->block_7_2.out0;
+    rf.out1->block_7_2.out1;
+
+    block_7_3;
+    block_7_3.in0->rf.in0;
+    rf.out0->block_7_3.out0;
+    rf.out1->block_7_3.out1;
+
+    block_8_0;
+    block_8_0.in0->mem_port.in0;
+    block_8_0.in1->mem_port.in1;
+    block_8_0.in2->mem_port.in2;
+    block_8_0.in3->mem_port.in3;
+    mem_port.out->block_8_0.out;
+
+        mem_port;
+        mem_unit.data_out->mem_port.out;
+        mem_port.in0->mux_data.in0;
+        mem_port.in0->mux_addr.in0;
+        mem_port.in1->mux_data.in1;
+        mem_port.in1->mux_addr.in1;
+        mem_port.in2->mux_data.in2;
+        mem_port.in2->mux_addr.in2;
+        mem_port.in3->mux_data.in3;
+        mem_port.in3->mux_addr.in3;
+        mux_addr.out->mem_unit.addr;
+        mux_data.out->mem_unit.data_in;
+
+            mem_unit;
+
+    block_9_0;
+    block_9_0.in0->CGAAdresPE_mux0.in0;
+    block_9_0.in0->CGAAdresPE_mux1.in0;
+    block_9_0.in0->CGAAdresPE_mux2.in0;
+    block_9_0.in1->CGAAdresPE_mux0.in1;
+    block_9_0.in1->CGAAdresPE_mux1.in1;
+    block_9_0.in1->CGAAdresPE_mux2.in1;
+    block_9_0.in2->CGAAdresPE_mux0.in2;
+    block_9_0.in2->CGAAdresPE_mux1.in2;
+    block_9_0.in2->CGAAdresPE_mux2.in2;
+    block_9_0.in3->CGAAdresPE_mux0.in3;
+    block_9_0.in3->CGAAdresPE_mux1.in3;
+    block_9_0.in3->CGAAdresPE_mux2.in3;
+    block_9_0.in4->CGAAdresPE_mux0.in4;
+    block_9_0.in4->CGAAdresPE_mux1.in4;
+    block_9_0.in4->CGAAdresPE_mux2.in4;
+    block_9_0.in5->CGAAdresPE_mux0.in5;
+    block_9_0.in5->CGAAdresPE_mux1.in5;
+    block_9_0.in5->CGAAdresPE_mux2.in5;
+    block_9_0.in6->CGAAdresPE_mux0.in6;
+    block_9_0.in6->CGAAdresPE_mux1.in6;
+    block_9_0.in6->CGAAdresPE_mux2.in6;
+    block_9_0.in7->CGAAdresPE_mux0.in7;
+    block_9_0.in7->CGAAdresPE_mux1.in7;
+    block_9_0.in7->CGAAdresPE_mux2.in7;
+    block_9_0.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_9_0.rf_in_muxout->mux_out.in1;
+    func.out->block_9_0.rf_out;
+    mux_out.out->block_9_0.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_9_1;
+    block_9_1.in1->CGAAdresPE_mux0.in1;
+    block_9_1.in1->CGAAdresPE_mux1.in1;
+    block_9_1.in1->CGAAdresPE_mux2.in1;
+    block_9_1.in0->CGAAdresPE_mux0.in0;
+    block_9_1.in0->CGAAdresPE_mux1.in0;
+    block_9_1.in0->CGAAdresPE_mux2.in0;
+    block_9_1.in2->CGAAdresPE_mux0.in2;
+    block_9_1.in2->CGAAdresPE_mux1.in2;
+    block_9_1.in2->CGAAdresPE_mux2.in2;
+    block_9_1.in3->CGAAdresPE_mux0.in3;
+    block_9_1.in3->CGAAdresPE_mux1.in3;
+    block_9_1.in3->CGAAdresPE_mux2.in3;
+    block_9_1.in4->CGAAdresPE_mux0.in4;
+    block_9_1.in4->CGAAdresPE_mux1.in4;
+    block_9_1.in4->CGAAdresPE_mux2.in4;
+    block_9_1.in5->CGAAdresPE_mux0.in5;
+    block_9_1.in5->CGAAdresPE_mux1.in5;
+    block_9_1.in5->CGAAdresPE_mux2.in5;
+    block_9_1.in6->CGAAdresPE_mux0.in6;
+    block_9_1.in6->CGAAdresPE_mux1.in6;
+    block_9_1.in6->CGAAdresPE_mux2.in6;
+    block_9_1.in7->CGAAdresPE_mux0.in7;
+    block_9_1.in7->CGAAdresPE_mux1.in7;
+    block_9_1.in7->CGAAdresPE_mux2.in7;
+    block_9_1.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_9_1.rf_in_muxout->mux_out.in1;
+    func.out->block_9_1.rf_out;
+    mux_out.out->block_9_1.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_9_2;
+    block_9_2.in1->CGAAdresPE_mux0.in1;
+    block_9_2.in1->CGAAdresPE_mux1.in1;
+    block_9_2.in1->CGAAdresPE_mux2.in1;
+    block_9_2.in0->CGAAdresPE_mux0.in0;
+    block_9_2.in0->CGAAdresPE_mux1.in0;
+    block_9_2.in0->CGAAdresPE_mux2.in0;
+    block_9_2.in2->CGAAdresPE_mux0.in2;
+    block_9_2.in2->CGAAdresPE_mux1.in2;
+    block_9_2.in2->CGAAdresPE_mux2.in2;
+    block_9_2.in3->CGAAdresPE_mux0.in3;
+    block_9_2.in3->CGAAdresPE_mux1.in3;
+    block_9_2.in3->CGAAdresPE_mux2.in3;
+    block_9_2.in4->CGAAdresPE_mux0.in4;
+    block_9_2.in4->CGAAdresPE_mux1.in4;
+    block_9_2.in4->CGAAdresPE_mux2.in4;
+    block_9_2.in5->CGAAdresPE_mux0.in5;
+    block_9_2.in5->CGAAdresPE_mux1.in5;
+    block_9_2.in5->CGAAdresPE_mux2.in5;
+    block_9_2.in6->CGAAdresPE_mux0.in6;
+    block_9_2.in6->CGAAdresPE_mux1.in6;
+    block_9_2.in6->CGAAdresPE_mux2.in6;
+    block_9_2.in7->CGAAdresPE_mux0.in7;
+    block_9_2.in7->CGAAdresPE_mux1.in7;
+    block_9_2.in7->CGAAdresPE_mux2.in7;
+    block_9_2.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_9_2.rf_in_muxout->mux_out.in1;
+    func.out->block_9_2.rf_out;
+    mux_out.out->block_9_2.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+
+    block_9_3;
+    block_9_3.in0->CGAAdresPE_mux0.in0;
+    block_9_3.in0->CGAAdresPE_mux1.in0;
+    block_9_3.in0->CGAAdresPE_mux2.in0;
+    block_9_3.in1->CGAAdresPE_mux0.in1;
+    block_9_3.in1->CGAAdresPE_mux1.in1;
+    block_9_3.in1->CGAAdresPE_mux2.in1;
+    block_9_3.in2->CGAAdresPE_mux0.in2;
+    block_9_3.in2->CGAAdresPE_mux1.in2;
+    block_9_3.in2->CGAAdresPE_mux2.in2;
+    block_9_3.in3->CGAAdresPE_mux0.in3;
+    block_9_3.in3->CGAAdresPE_mux1.in3;
+    block_9_3.in3->CGAAdresPE_mux2.in3;
+    block_9_3.in4->CGAAdresPE_mux0.in4;
+    block_9_3.in4->CGAAdresPE_mux1.in4;
+    block_9_3.in4->CGAAdresPE_mux2.in4;
+    block_9_3.in5->CGAAdresPE_mux0.in5;
+    block_9_3.in5->CGAAdresPE_mux1.in5;
+    block_9_3.in5->CGAAdresPE_mux2.in5;
+    block_9_3.in6->CGAAdresPE_mux0.in6;
+    block_9_3.in6->CGAAdresPE_mux1.in6;
+    block_9_3.in6->CGAAdresPE_mux2.in6;
+    block_9_3.in7->CGAAdresPE_mux0.in7;
+    block_9_3.in7->CGAAdresPE_mux1.in7;
+    block_9_3.in7->CGAAdresPE_mux2.in7;
+    block_9_3.rf_in_muxa->CGAAdresPE_mux0.in9;
+    block_9_3.rf_in_muxout->mux_out.in1;
+    func.out->block_9_3.rf_out;
+    mux_out.out->block_9_3.out;
+    const.out->CGAAdresPE_mux0.in8;
+    const.out->CGAAdresPE_mux1.in8;
+    CGAAdresPE_mux0.out->func.in_a;
+    CGAAdresPE_mux1.out->func.in_b;
+    CGAAdresPE_mux2.out->mux_out.in0;
+
+        const;
+

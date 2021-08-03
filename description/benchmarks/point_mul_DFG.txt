@@ -1,0 +1,336 @@
+vertex MUL0
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL0.out0
+attr unit str MAD.out0
+vertex MUL0.in0
+attr unit str MAD.in0
+vertex MUL0.in1
+attr unit str MAD.in1
+vertex MUL3
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL3.out0
+attr unit str MAD.out0
+vertex MUL3.in0
+attr unit str MAD.in0
+vertex MUL3.in1
+attr unit str MAD.in1
+vertex MUL5
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL5.out0
+attr unit str MAD.out0
+vertex MUL5.in0
+attr unit str MAD.in0
+vertex MUL5.in1
+attr unit str MAD.in1
+vertex MUL2
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL2.out0
+attr unit str MAD.out0
+vertex MUL2.in0
+attr unit str MAD.in0
+vertex MUL2.in1
+attr unit str MAD.in1
+vertex MUL6
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL6.out0
+attr unit str MAD.out0
+vertex MUL6.in0
+attr unit str MAD.in0
+vertex MUL6.in1
+attr unit str MAD.in1
+vertex MUL4
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL4.out0
+attr unit str MAD.out0
+vertex MUL4.in0
+attr unit str MAD.in0
+vertex MUL4.in1
+attr unit str MAD.in1
+vertex MUL7
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL7.out0
+attr unit str MAD.out0
+vertex MUL7.in0
+attr unit str MAD.in0
+vertex MUL7.in1
+attr unit str MAD.in1
+vertex MUL1
+attr unit str MAD
+attr pattern str PATN_MUL0
+vertex MUL1.out0
+attr unit str MAD.out0
+vertex MUL1.in0
+attr unit str MAD.in0
+vertex MUL1.in1
+attr unit str MAD.in1
+vertex INPUT9
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT9.out0
+attr unit str INPUT.out0
+vertex INPUT9.in0
+attr unit str INPUT.in0
+vertex INPUT13
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT13.out0
+attr unit str INPUT.out0
+vertex INPUT13.in0
+attr unit str INPUT.in0
+vertex INPUT4
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT4.out0
+attr unit str INPUT.out0
+vertex INPUT4.in0
+attr unit str INPUT.in0
+vertex INPUT12
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT12.out0
+attr unit str INPUT.out0
+vertex INPUT12.in0
+attr unit str INPUT.in0
+vertex INPUT15
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT15.out0
+attr unit str INPUT.out0
+vertex INPUT15.in0
+attr unit str INPUT.in0
+vertex INPUT14
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT14.out0
+attr unit str INPUT.out0
+vertex INPUT14.in0
+attr unit str INPUT.in0
+vertex INPUT3
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT3.out0
+attr unit str INPUT.out0
+vertex INPUT3.in0
+attr unit str INPUT.in0
+vertex INPUT8
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT8.out0
+attr unit str INPUT.out0
+vertex INPUT8.in0
+attr unit str INPUT.in0
+vertex INPUT2
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT2.out0
+attr unit str INPUT.out0
+vertex INPUT2.in0
+attr unit str INPUT.in0
+vertex INPUT1
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT1.out0
+attr unit str INPUT.out0
+vertex INPUT1.in0
+attr unit str INPUT.in0
+vertex INPUT10
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT10.out0
+attr unit str INPUT.out0
+vertex INPUT10.in0
+attr unit str INPUT.in0
+vertex INPUT11
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT11.out0
+attr unit str INPUT.out0
+vertex INPUT11.in0
+attr unit str INPUT.in0
+vertex INPUT5
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT5.out0
+attr unit str INPUT.out0
+vertex INPUT5.in0
+attr unit str INPUT.in0
+vertex INPUT6
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT6.out0
+attr unit str INPUT.out0
+vertex INPUT6.in0
+attr unit str INPUT.in0
+vertex INPUT0
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT0.out0
+attr unit str INPUT.out0
+vertex INPUT0.in0
+attr unit str INPUT.in0
+vertex INPUT7
+attr unit str INPUT
+attr pattern str PATN_INPUT0
+vertex INPUT7.out0
+attr unit str INPUT.out0
+vertex INPUT7.in0
+attr unit str INPUT.in0
+vertex OUTPUT0
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT0.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT0.in0
+attr unit str OUTPUT.in0
+vertex OUTPUT7
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT7.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT7.in0
+attr unit str OUTPUT.in0
+vertex OUTPUT4
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT4.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT4.in0
+attr unit str OUTPUT.in0
+vertex OUTPUT2
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT2.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT2.in0
+attr unit str OUTPUT.in0
+vertex OUTPUT3
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT3.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT3.in0
+attr unit str OUTPUT.in0
+vertex OUTPUT5
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT5.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT5.in0
+attr unit str OUTPUT.in0
+vertex OUTPUT1
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT1.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT1.in0
+attr unit str OUTPUT.in0
+vertex OUTPUT6
+attr unit str OUTPUT
+attr pattern str __OUTPUT__
+vertex OUTPUT6.out0
+attr unit str OUTPUT.out0
+vertex OUTPUT6.in0
+attr unit str OUTPUT.in0
+edge MUL0 MUL0.out0
+edge MUL0.out0 OUTPUT0.in0
+edge MUL0.in0 MUL0
+edge MUL0.in1 MUL0
+edge MUL3 MUL3.out0
+edge MUL3.out0 OUTPUT3.in0
+edge MUL3.in0 MUL3
+edge MUL3.in1 MUL3
+edge MUL5 MUL5.out0
+edge MUL5.out0 OUTPUT5.in0
+edge MUL5.in0 MUL5
+edge MUL5.in1 MUL5
+edge MUL2 MUL2.out0
+edge MUL2.out0 OUTPUT2.in0
+edge MUL2.in0 MUL2
+edge MUL2.in1 MUL2
+edge MUL6 MUL6.out0
+edge MUL6.out0 OUTPUT6.in0
+edge MUL6.in0 MUL6
+edge MUL6.in1 MUL6
+edge MUL4 MUL4.out0
+edge MUL4.out0 OUTPUT4.in0
+edge MUL4.in0 MUL4
+edge MUL4.in1 MUL4
+edge MUL7 MUL7.out0
+edge MUL7.out0 OUTPUT7.in0
+edge MUL7.in0 MUL7
+edge MUL7.in1 MUL7
+edge MUL1 MUL1.out0
+edge MUL1.out0 OUTPUT1.in0
+edge MUL1.in0 MUL1
+edge MUL1.in1 MUL1
+edge INPUT9 INPUT9.out0
+edge INPUT9.out0 MUL1.in1
+edge INPUT9.in0 INPUT9
+edge INPUT13 INPUT13.out0
+edge INPUT13.out0 MUL5.in1
+edge INPUT13.in0 INPUT13
+edge INPUT4 INPUT4.out0
+edge INPUT4.out0 MUL4.in0
+edge INPUT4.in0 INPUT4
+edge INPUT12 INPUT12.out0
+edge INPUT12.out0 MUL4.in1
+edge INPUT12.in0 INPUT12
+edge INPUT15 INPUT15.out0
+edge INPUT15.out0 MUL7.in1
+edge INPUT15.in0 INPUT15
+edge INPUT14 INPUT14.out0
+edge INPUT14.out0 MUL6.in1
+edge INPUT14.in0 INPUT14
+edge INPUT3 INPUT3.out0
+edge INPUT3.out0 MUL3.in0
+edge INPUT3.in0 INPUT3
+edge INPUT8 INPUT8.out0
+edge INPUT8.out0 MUL0.in1
+edge INPUT8.in0 INPUT8
+edge INPUT2 INPUT2.out0
+edge INPUT2.out0 MUL2.in0
+edge INPUT2.in0 INPUT2
+edge INPUT1 INPUT1.out0
+edge INPUT1.out0 MUL1.in0
+edge INPUT1.in0 INPUT1
+edge INPUT10 INPUT10.out0
+edge INPUT10.out0 MUL2.in1
+edge INPUT10.in0 INPUT10
+edge INPUT11 INPUT11.out0
+edge INPUT11.out0 MUL3.in1
+edge INPUT11.in0 INPUT11
+edge INPUT5 INPUT5.out0
+edge INPUT5.out0 MUL5.in0
+edge INPUT5.in0 INPUT5
+edge INPUT6 INPUT6.out0
+edge INPUT6.out0 MUL6.in0
+edge INPUT6.in0 INPUT6
+edge INPUT0 INPUT0.out0
+edge INPUT0.out0 MUL0.in0
+edge INPUT0.in0 INPUT0
+edge INPUT7 INPUT7.out0
+edge INPUT7.out0 MUL7.in0
+edge INPUT7.in0 INPUT7
+edge OUTPUT0 OUTPUT0.out0
+edge OUTPUT0.in0 OUTPUT0
+edge OUTPUT7 OUTPUT7.out0
+edge OUTPUT7.in0 OUTPUT7
+edge OUTPUT4 OUTPUT4.out0
+edge OUTPUT4.in0 OUTPUT4
+edge OUTPUT2 OUTPUT2.out0
+edge OUTPUT2.in0 OUTPUT2
+edge OUTPUT3 OUTPUT3.out0
+edge OUTPUT3.in0 OUTPUT3
+edge OUTPUT5 OUTPUT5.out0
+edge OUTPUT5.in0 OUTPUT5
+edge OUTPUT1 OUTPUT1.out0
+edge OUTPUT1.in0 OUTPUT1
+edge OUTPUT6 OUTPUT6.out0
+edge OUTPUT6.in0 OUTPUT6
