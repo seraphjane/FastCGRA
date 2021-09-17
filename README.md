@@ -66,6 +66,26 @@ for iter = 0:ITER_MAX # ITER_MAX is the maximum number of iteration
 
 The function *evaluatePlacement* runs the routing algorithm (not rerouting the routed edges) and use the number of routed edges as the cost of the SA algorithm.  
 
+### Hierarchical Architecture Description Language Examples
+
+See description/baseline.py, description/optimized0.py, description/optimized1.py for details. 
+
+#### Unit Definition
+
+![Unit Definition](./CodeUnits.png)
+
+#### Switch Definition
+
+![Switch Definition](./CodeSwitches.png)
+
+#### Module Definition
+
+![Block Definition](./CodeModules1.png)
+
+![Core Definition](./CodeModules2.png)
+
+
+
 ## Experimental Settings
 
 Intel Xeon E5-2620 v4 * 2
