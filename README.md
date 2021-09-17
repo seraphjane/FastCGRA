@@ -18,7 +18,7 @@ for iter = 0:ITER_MAX # ITER_MAX is the maximum number of iteration
      
     Pick a random pair of vertices in the same type from the two clusters, try to swap them
      
-    score = evaluate(clusters)
+    score = evaluatePartition(clusters)
      
     if score > lastScore || exp((score - lastScore)/T) > rand(0, 1.0): 
      
@@ -29,6 +29,42 @@ for iter = 0:ITER_MAX # ITER_MAX is the maximum number of iteration
     else: 
      
         reject the swap
+
+#### Note
+
+The function *temperature* update the temperature in the SA algorithm. For example, we can reduce the temperature by 5% in every 100 iterations.  
+
+The function *evaluatePartition* is the cost function which calculates the number of cuts plus the difference of the numbers of vertices.  
+
+### Placement Based on Simulated Annealing Algorithm
+
+#### Algorithm: Partition
+ 
+Place the vertices of the DFG by a bipartite graph matching algorithm and random swaps
+ 
+lastScore = 0.0
+ 
+for iter = 0:ITER_MAX # ITER_MAX is the maximum number of iteration
+ 
+    T = temperature(iter)
+     
+    Pick a random pair of vertices, try to swap their placement
+     
+    score = evaluatePlacement(clusters)
+     
+    if score > lastScore || exp((score - lastScore)/T) > rand(0, 1.0): 
+     
+        accept the swap
+        
+        lastScore = score
+        
+    else: 
+     
+        reject the swap
+
+#### Note
+
+The function *evaluatePlacement* runs the routing algorithm (not rerouting the routed edges) and use the number of routed edges as the cost of the SA algorithm.  
 
 ## Experimental Settings
 
