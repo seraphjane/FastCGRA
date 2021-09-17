@@ -2,6 +2,34 @@
 
 We are still tidying the codes of FastCGRA. The codes of some algorithms are available. The binary executable of the placement algorithm is also available. 
 
+## Supplementary Materials
+
+### Graph Partition Based on Simulated Annealing Algorithm
+
+#### Algorithm: Partition
+ 
+Randomly partition the vertices into two clusters according to given resources constraints
+ 
+lastScore = 0.0
+ 
+for iter = 0:ITER_MAX # ITER_MAX is the maximum number of iteration
+ 
+    T = temperature(iter)
+     
+    Pick a random pair of vertices in the same type from the two clusters, try to swap them
+     
+    score = evaluate(clusters)
+     
+    if score > lastScore || exp((score - lastScore)/T) > rand(0, 1.0): 
+     
+        accept the swap
+        
+        lastScore = score
+        
+    else: 
+     
+        reject the swap
+
 ## Experimental Settings
 
 Intel Xeon E5-2620 v4 * 2
