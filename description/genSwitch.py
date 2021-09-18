@@ -1,3 +1,5 @@
+import sys
+
 import numpy as np
 import cvxpy as cp
 
@@ -248,52 +250,231 @@ def genRRG(inputPorts, outputPorts, pathsRequired, layersMUX, numMUX, widthMUX, 
     
 
 if __name__ == "__main__": 
-    # FULLYCONN_4X4
-    # inputPorts  = ["in0","in1","in2","in3", ]
-    # outputPorts = ["out0","out1", "out2","out3", ]
-    # layersMUX   = 2
-    # numMUX      = 4
-    # widthMUX    = 2
-    # pathsRequired = {"in0": ["out0", "out1", "out2", "out3", ],
-    #                  "in1": ["out0", "out1", "out2", "out3", ],
-    #                  "in2": ["out0", "out1", "out2", "out3", ],
-    #                  "in3": ["out0", "out1", "out2", "out3", ],}
-    # PARTCONN_4X4
-    # inputPorts  = ["in0","in1","in2","in3", ]
-    # outputPorts = ["out0","out1", "out2","out3", ]
-    # layersMUX   = 2
-    # numMUX      = 4
-    # widthMUX    = 2
-    # pathsRequired = {"in0": ["out0", "out1", "out2", ],
-    #                  "in1": ["out0", "out1", "out2", ],
-    #                  "in2": ["out1", "out2", "out3", ],
-    #                  "in3": ["out1", "out2", "out3", ],}
-    # FULLYCONN_6X6
-    # inputPorts  = ["in0","in1","in2","in3", "in4","in5", ]
-    # outputPorts = ["out0","out1", "out2","out3", "out4","out5", ]
-    # layersMUX   = 2
-    # numMUX      = 6
-    # widthMUX    = 3
-    # pathsRequired = {"in0": ["out0", "out1", "out2", "out5", ],
-    #                  "in1": ["out0", "out1", "out4", "out5", ],
-    #                  "in2": ["out0", "out1", "out2", "out3", ],
-    #                  "in3": ["out1", "out3", "out4", "out5", ],
-    #                  "in4": ["out0", "out3", "out4", "out5", ],
-    #                  "in5": ["out0", "out1", "out4", "out5", ],}
-    # FULLYCONN_8X8
-    inputPorts  = ["in0","in1","in2","in3", "in4","in5","in6","in7", ]
-    outputPorts = ["out0","out1", "out2","out3", "out4","out5", "out6","out7", ]
+    inputPorts  = ["in0","in1","in2","in3", ]
+    outputPorts = ["out0","out1", "out2","out3", ]
     layersMUX   = 2
-    numMUX      = 8
-    widthMUX    = 3
-    pathsRequired = {"in0": ["out0", "out3", "out5", "out7", ],
-                     "in1": ["out0", "out1", "out2", "out5", ],
-                     "in2": ["out1", "out3", "out6", "out7", ],
-                     "in3": ["out0", "out1", "out2", "out3", ],
-                     "in4": ["out0", "out5", "out6", "out7", ],
-                     "in5": ["out1", "out3", "out6", "out7", ],
-                     "in6": ["out0", "out5", "out6", "out7", ],
-                     "in7": ["out2", "out3", "out4", "out7", ],}
+    numMUX      = 4
+    widthMUX    = 2
+    pathsRequired = {"in0": ["out0", "out1", ],
+                        "in1": ["out0", "out1", ],
+                        "in2": ["out2", "out3", ],
+                        "in3": ["out2", "out3", ],}
+    if len(sys.argv) > 1 and sys.argv[1] == '4x4_0.5_0': 
+        inputPorts  = ["in0","in1","in2","in3", ]
+        outputPorts = ["out0","out1", "out2","out3", ]
+        layersMUX   = 2
+        numMUX      = 4
+        widthMUX    = 2
+        pathsRequired = {"in0": ["out0", "out1", ],
+                         "in1": ["out2", "out3", ],
+                         "in2": ["out0", "out1", ],
+                         "in3": ["out2", "out3", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '4x4_0.5_1': 
+        inputPorts  = ["in0","in1","in2","in3", ]
+        outputPorts = ["out0","out1", "out2","out3", ]
+        layersMUX   = 2
+        numMUX      = 4
+        widthMUX    = 2
+        pathsRequired = {"in0": ["out0", "out3", ],
+                         "in1": ["out0", "out2", ],
+                         "in2": ["out1", "out3", ],
+                         "in3": ["out1", "out2", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '4x4_0.5_2': 
+        inputPorts  = ["in0","in1","in2","in3", ]
+        outputPorts = ["out0","out1", "out2","out3", ]
+        layersMUX   = 2
+        numMUX      = 4
+        widthMUX    = 2
+        pathsRequired = {"in0": ["out0", "out1", ],
+                         "in1": ["out0", "out1", ],
+                         "in2": ["out2", "out3", ],
+                         "in3": ["out2", "out3", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '4x4_0.75_0': 
+        inputPorts  = ["in0","in1","in2","in3", ]
+        outputPorts = ["out0","out1", "out2","out3", ]
+        layersMUX   = 2
+        numMUX      = 4
+        widthMUX    = 2
+        pathsRequired = {"in0": ["out0", "out1", "out2", ],
+                         "in1": ["out0", "out1", "out3", ],
+                         "in2": ["out0", "out2", "out3", ],
+                         "in3": ["out1", "out2", "out3", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '4x4_0.75_1': 
+        inputPorts  = ["in0","in1","in2","in3", ]
+        outputPorts = ["out0","out1", "out2","out3", ]
+        layersMUX   = 2
+        numMUX      = 4
+        widthMUX    = 2
+        pathsRequired = {"in0": ["out0", "out1", "out2", ],
+                         "in1": ["out0", "out1", "out3", ],
+                         "in2": ["out0", "out2", "out3", ],
+                         "in3": ["out1", "out2", "out3", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '4x4_0.75_2': 
+        inputPorts  = ["in0","in1","in2","in3", ]
+        outputPorts = ["out0","out1", "out2","out3", ]
+        layersMUX   = 2
+        numMUX      = 4
+        widthMUX    = 2
+        pathsRequired = {"in0": ["out0", "out1", "out2", ],
+                         "in1": ["out0", "out1", "out2", ],
+                         "in2": ["out1", "out2", "out3", ],
+                         "in3": ["out1", "out2", "out3", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '6x6_0.5_0': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", ]
+        layersMUX   = 2
+        numMUX      = 6
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", ],
+                         "in1": ["out0", "out1", "out4", ],
+                         "in2": ["out0", "out1", "out2", ],
+                         "in3": ["out1", "out3", "out5", ],
+                         "in4": ["out0", "out3", "out4", ],
+                         "in5": ["out1", "out4", "out5", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '6x6_0.5_1': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", ]
+        layersMUX   = 2
+        numMUX      = 6
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", ],
+                         "in1": ["out0", "out2", "out4", ],
+                         "in2": ["out0", "out3", "out5", ],
+                         "in3": ["out1", "out3", "out5", ],
+                         "in4": ["out1", "out3", "out4", ],
+                         "in5": ["out1", "out2", "out4", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '6x6_0.5_2': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", ]
+        layersMUX   = 2
+        numMUX      = 6
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", ],
+                         "in1": ["out0", "out1", "out2", ],
+                         "in2": ["out0", "out1", "out2", ],
+                         "in3": ["out3", "out4", "out5", ],
+                         "in4": ["out3", "out4", "out5", ],
+                         "in5": ["out3", "out4", "out5", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '6x6_0.875_0': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", ]
+        layersMUX   = 2
+        numMUX      = 6
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", "out3", ],
+                         "in1": ["out0", "out1", "out3", "out4", ],
+                         "in2": ["out0", "out1", "out2", "out3", ],
+                         "in3": ["out1", "out3", "out4", "out5", ],
+                         "in4": ["out0", "out3", "out4", "out5", ],
+                         "in5": ["out1", "out3", "out4", "out5", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '6x6_0.875_1': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", ]
+        layersMUX   = 2
+        numMUX      = 6
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", "out3", ],
+                         "in1": ["out0", "out2", "out3", "out4", ],
+                         "in2": ["out0", "out3", "out4", "out5", ],
+                         "in3": ["out1", "out2", "out3", "out5", ],
+                         "in4": ["out0", "out1", "out3", "out4", ],
+                         "in5": ["out1", "out2", "out4", "out5", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '6x6_0.875_2': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", ]
+        layersMUX   = 2
+        numMUX      = 6
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", "out3", ],
+                         "in1": ["out0", "out1", "out2", "out3", ],
+                         "in2": ["out0", "out1", "out2", "out3", ],
+                         "in3": ["out2", "out3", "out4", "out5", ],
+                         "in4": ["out2", "out3", "out4", "out5", ],
+                         "in5": ["out2", "out3", "out4", "out5", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '8x8_0.5_0': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5","in6","in7", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", "out6","out7", ]
+        layersMUX   = 2
+        numMUX      = 8
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out3", "out5", "out7", ],
+                         "in1": ["out0", "out1", "out2", "out5", ],
+                         "in2": ["out1", "out3", "out6", "out7", ],
+                         "in3": ["out0", "out1", "out2", "out3", ],
+                         "in4": ["out0", "out5", "out6", "out7", ],
+                         "in5": ["out1", "out3", "out6", "out7", ],
+                         "in6": ["out0", "out5", "out6", "out7", ],
+                         "in7": ["out2", "out3", "out4", "out7", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '8x8_0.5_1': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5","in6","in7", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", "out6","out7", ]
+        layersMUX   = 2
+        numMUX      = 8
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", "out7", ],
+                         "in1": ["out0", "out3", "out4", "out5", ],
+                         "in2": ["out1", "out3", "out5", "out7", ],
+                         "in3": ["out1", "out2", "out5", "out6", ],
+                         "in4": ["out0", "out3", "out6", "out7", ],
+                         "in5": ["out1", "out2", "out6", "out7", ],
+                         "in6": ["out1", "out3", "out6", "out7", ],
+                         "in7": ["out0", "out3", "out4", "out7", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '8x8_0.5_2': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5","in6","in7", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", "out6","out7", ]
+        layersMUX   = 2
+        numMUX      = 8
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", "out3", ],
+                         "in1": ["out0", "out1", "out2", "out3", ],
+                         "in2": ["out0", "out1", "out2", "out3", ],
+                         "in3": ["out0", "out1", "out2", "out3", ],
+                         "in4": ["out4", "out5", "out6", "out7", ],
+                         "in5": ["out4", "out5", "out6", "out7", ],
+                         "in6": ["out4", "out5", "out6", "out7", ],
+                         "in7": ["out4", "out5", "out6", "out7", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '8x8_0.75_0': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5","in6","in7", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", "out6","out7", ]
+        layersMUX   = 2
+        numMUX      = 8
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", "out3", "out5", "out7", ],
+                         "in1": ["out0", "out1", "out2", "out3", "out4", "out5", ],
+                         "in2": ["out1", "out3", "out4", "out5", "out6", "out7", ],
+                         "in3": ["out0", "out1", "out2", "out3", "out4", "out5", ],
+                         "in4": ["out0", "out2", "out3", "out5", "out6", "out7", ],
+                         "in5": ["out1", "out3", "out4", "out5", "out6", "out7", ],
+                         "in6": ["out0", "out1", "out3", "out5", "out6", "out7", ],
+                         "in7": ["out1", "out2", "out3", "out4", "out6", "out7", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '8x8_0.75_1': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5","in6","in7", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", "out6","out7", ]
+        layersMUX   = 2
+        numMUX      = 8
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out3", "out4", "out5", "out7", ],
+                         "in1": ["out0", "out1", "out2", "out4", "out5", "out6", ],
+                         "in2": ["out1", "out2", "out3", "out5", "out6", "out7", ],
+                         "in3": ["out0", "out1", "out2", "out3", "out6", "out7", ],
+                         "in4": ["out0", "out2", "out3", "out4", "out5", "out6", ],
+                         "in5": ["out1", "out3", "out4", "out5", "out6", "out7", ],
+                         "in6": ["out1", "out2", "out3", "out4", "out5", "out6", ],
+                         "in7": ["out1", "out2", "out3", "out5", "out6", "out7", ],}
+    elif len(sys.argv) > 1 and sys.argv[1] == '8x8_0.75_2': 
+        inputPorts  = ["in0","in1","in2","in3", "in4","in5","in6","in7", ]
+        outputPorts = ["out0","out1", "out2","out3", "out4","out5", "out6","out7", ]
+        layersMUX   = 2
+        numMUX      = 8
+        widthMUX    = 3
+        pathsRequired = {"in0": ["out0", "out1", "out2", "out3", "out4", "out5", ],
+                         "in1": ["out0", "out1", "out2", "out3", "out4", "out5", ],
+                         "in2": ["out0", "out1", "out2", "out3", "out4", "out5", ],
+                         "in3": ["out0", "out1", "out2", "out3", "out4", "out5", ],
+                         "in4": ["out2", "out3", "out4", "out5", "out6", "out7", ],
+                         "in5": ["out2", "out3", "out4", "out5", "out6", "out7", ],
+                         "in6": ["out2", "out3", "out4", "out5", "out6", "out7", ],
+                         "in7": ["out2", "out3", "out4", "out5", "out6", "out7", ],}
     prob, varX, varY, varZ, varM = solve(inputPorts, outputPorts, pathsRequired, layersMUX, numMUX, widthMUX, numLeastMUX=2, numOutMUX=2)
     # prob, varX, varY, varZ, varM = solve(inputPorts, outputPorts, pathsRequired, layersMUX, numMUX, widthMUX, numLeastMUX=None, numOutMUX=None, maxFanout=2)
     #prob, varX, varY, varZ, varM = solve(inputPorts, outputPorts, pathsRequired, layersMUX, numMUX, widthMUX, numLeastMUX=4, numOutMUX=4)
@@ -315,3 +496,26 @@ if __name__ == "__main__":
     graph = genRRG(inputPorts, outputPorts, pathsRequired, layersMUX, numMUX, widthMUX, varZ.value, varM.value)
     with open("G.txt", "w") as fout: 
         fout.write(graph)
+        
+        
+# Running Times: 
+'''
+4x4_0.5_0: 0.76s
+4x4_0.5_1: 0.76s
+4x4_0.5_2: 0.78s
+4x4_0.75_0: 0.82s
+4x4_0.75_1: 0.89s
+4x4_0.75_2: 0.87s
+6x6_0.5_0: 2.25s
+6x6_0.5_1: 2.78s
+6x6_0.5_2: 4.11s
+6x6_0.875_0: 3.88s
+6x6_0.875_1: 3.18s
+6x6_0.875_2: 3.45s
+8x8_0.5_0: 45.78s
+8x8_0.5_1: 1min3s = 63s
+8x8_0.5_2: 35.18s
+8x8_0.75_0: 6min31s = 391s
+8x8_0.75_1: 16s.75s
+8x8_0.75_2: 55.20s
+'''
