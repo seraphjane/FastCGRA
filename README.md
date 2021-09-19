@@ -7,7 +7,9 @@ We are still tidying the codes of FastCGRA. The codes of some algorithms are ava
 ### Graph Partition Based on Simulated Annealing Algorithm
 
 #### Algorithm: Partition
- 
+
+```
+
 Randomly partition the vertices into two clusters according to given resources constraints
  
 lastScore = 0.0
@@ -29,6 +31,7 @@ for iter = 0:ITER_MAX # ITER_MAX is the maximum number of iteration
     else: 
      
         reject the swap
+```
 
 #### Note
 
@@ -39,7 +42,9 @@ The function *evaluatePartition* is the cost function which calculates the numbe
 ### Placement Based on Simulated Annealing Algorithm
 
 #### Algorithm: Partition
- 
+
+```
+
 Place the vertices of the DFG by a bipartite graph matching algorithm and random swaps
  
 lastScore = 0.0
@@ -61,6 +66,8 @@ for iter = 0:ITER_MAX # ITER_MAX is the maximum number of iteration
     else: 
      
         reject the swap
+
+```
 
 #### Note
 
